@@ -1,0 +1,15 @@
+graph TD
+    A[External Sources] --> B[Data Collector]
+    B --> C[Raw Data Storage]
+    C --> D[Data Generator]
+    D --> E[Schema-based Examples]
+    E --> F[Training Format]
+    F --> G[Model Training]
+    
+    A1[GitHub Repos] --> B
+    A2[Documentation] --> B
+    A3[Stack Overflow] --> B
+    
+    C1[Raw Code Files] --> D
+    C2[Documentation Text] --> D
+    C3[Q&A Examples] --> D

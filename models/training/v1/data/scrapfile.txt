@@ -1,0 +1,581 @@
+[
+  {
+    "instruction": "Decompose and analyze this socket_programming code",
+    "input": "Repository: requests/requests\nFile: HISTORY.md\nCode:\nRelease History\n===============\n\ndev\n---\n\n- \\[Short description of non-trivial change.\\]\n\n2.32.5 (2025-08-18)\n-------------------\n\n**Bugfixes**\n\n- The SSLContext caching feature originally introduced in 2.32.0 has created\n  a new class of issues in Requests that have had negative impact across a number\n  of use cases. The Requests team has decided to revert this feature as long term\n  maintenance of it is proving to be unsustainable in its current iteration.\n\n**Deprecations**\n- Added support for Python 3.14.\n- Dropped support for Python 3.8 following its end of support.\n\n2.32.4 (2025-06-10)\n-------------------\n\n**Security**\n- CVE-2024-47081 Fixed an issue where a maliciously crafted URL and trusted\n  environment will retrieve credentials for the wrong hostname/machine from a\n  netrc file.\n\n**Improvements**\n- Numerous documentation improvements\n\n**Deprecations**\n- Added support for pypy 3.11 for Linux and macOS.\n- Dropped support for pypy 3.9 following its end of support.\n\n\n2.32.3 (2024...",
+    "output": {
+      "operation": "Socket Programming",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Create socket",
+          "expected_time": "165ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 2,
+          "action": "Bind address",
+          "expected_time": "321ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 3,
+          "action": "Listen for connection",
+          "expected_time": "87ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 4,
+          "action": "Accept connection",
+          "expected_time": "386ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 5,
+          "action": "Send/receive data",
+          "expected_time": "345ns",
+          "resource": "I/O"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this http_requests code",
+    "input": "Repository: requests/requests\nFile: README.md\nCode:\n# Requests\n\n**Requests** is a simple, yet elegant, HTTP library.\n\n```python\n>>> import requests\n>>> r = requests.get('https://httpbin.org/basic-auth/user/pass', auth=('user', 'pass'))\n>>> r.status_code\n200\n>>> r.headers['content-type']\n'application/json; charset=utf8'\n>>> r.encoding\n'utf-8'\n>>> r.text\n'{\"authenticated\": true, ...'\n>>> r.json()\n{'authenticated': True, ...}\n```\n\nRequests allows you to send HTTP/1.1 requests extremely easily. There\u2019s no need to manually add query strings to your URLs, or to form-encode your `PUT` & `POST` data \u2014 but nowadays, just use the `json` method!\n\nRequests is one of the most downloaded Python packages today, pulling in around `30M downloads / week`\u2014 according to GitHub, Requests is currently [depended upon](https://github.com/psf/requests/network/dependents?package_id=UGFja2FnZS01NzA4OTExNg%3D%3D) by `1,000,000+` repositories. You may certainly put your trust in this code.\n\n[![Downloads](https://static.pepy.tech/badge/requests/month)](https://pepy....",
+    "output": {
+      "operation": "Http Requests",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Prepare request headers",
+          "expected_time": "304ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 2,
+          "action": "Establish TCP connection",
+          "expected_time": "181ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 3,
+          "action": "Send HTTP request",
+          "expected_time": "498ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 4,
+          "action": "Receive HTTP response",
+          "expected_time": "330ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 5,
+          "action": "Parse response body",
+          "expected_time": "127ns",
+          "resource": "I/O"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this http_requests code",
+    "input": "Repository: requests/requests\nFile: setup.py\nCode:\n#!/usr/bin/env python\nimport os\nimport sys\nfrom codecs import open\n\nfrom setuptools import setup\n\nCURRENT_PYTHON = sys.version_info[:2]\nREQUIRED_PYTHON = (3, 9)\n\nif CURRENT_PYTHON < REQUIRED_PYTHON:\n    sys.stderr.write(\n        \"\"\"\n==========================\nUnsupported Python version\n==========================\nThis version of Requests requires at least Python {}.{}, but\nyou're trying to install it on Python {}.{}. To resolve this,\nconsider upgrading to a supported Python version.\n\nIf you can't upgrade your Python version, you'll need to\npin to an older version of Requests (<2.32.0).\n\"\"\".format(\n            *(REQUIRED_PYTHON + CURRENT_PYTHON)\n        )\n    )\n    sys.exit(1)\n\n\n# 'setup.py publish' shortcut.\nif sys.argv[-1] == \"publish\":\n    os.system(\"python setup.py sdist bdist_wheel\")\n    os.system(\"twine upload dist/*\")\n    sys.exit()\n\nrequires = [\n    \"charset_normalizer>=2,<4\",\n    \"idna>=2.5,<4\",\n    \"urllib3>=1.21.1,<3\",\n    \"certifi>=2017.4.17\",\n]\ntest_requirements = [\n    \"pyt...",
+    "output": {
+      "operation": "Http Requests",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Prepare request headers",
+          "expected_time": "164ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 2,
+          "action": "Establish TCP connection",
+          "expected_time": "457ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 3,
+          "action": "Send HTTP request",
+          "expected_time": "381ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 4,
+          "action": "Receive HTTP response",
+          "expected_time": "390ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 5,
+          "action": "Parse response body",
+          "expected_time": "193ns",
+          "resource": "I/O"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this api_clients code",
+    "input": "Repository: aio-libs/aiohttp\nFile: CODE_OF_CONDUCT.md\nCode:\n# Contributor Covenant Code of Conduct\n\n## Our Pledge\n\nIn the interest of fostering an open and welcoming environment, we as contributors and maintainers pledge to making participation in our project and our community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, gender identity and expression, level of experience, nationality, personal appearance, race, religion, or sexual identity and orientation.\n\n## Our Standards\n\nExamples of behavior that contributes to creating a positive environment include:\n\n* Using welcoming and inclusive language\n* Being respectful of differing viewpoints and experiences\n* Gracefully accepting constructive criticism\n* Focusing on what is best for the community\n* Showing empathy towards other community members\n\nExamples of unacceptable behavior by participants include:\n\n* The use of sexualized language or imagery and unwelcome sexual attention or advances\n* Trolling, insulting/derogatory comments, and personal ...",
+    "output": {
+      "operation": "Api Clients",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Define API endpoint and parameters",
+          "expected_time": "334ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 2,
+          "action": "Construct request payload",
+          "expected_time": "424ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 3,
+          "action": "Send request over network",
+          "expected_time": "482ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 4,
+          "action": "Process JSON response",
+          "expected_time": "448ns",
+          "resource": "I/O"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this socket_programming code",
+    "input": "Repository: aio-libs/aiohttp\nFile: setup.py\nCode:\nimport os\nimport pathlib\nimport sys\n\nfrom setuptools import Extension, setup\n\nif sys.version_info < (3, 9):\n    raise RuntimeError(\"aiohttp 4.x requires Python 3.9+\")\n\n\nUSE_SYSTEM_DEPS = bool(\n    os.environ.get(\"AIOHTTP_USE_SYSTEM_DEPS\", os.environ.get(\"USE_SYSTEM_DEPS\"))\n)\nNO_EXTENSIONS: bool = bool(os.environ.get(\"AIOHTTP_NO_EXTENSIONS\"))\nHERE = pathlib.Path(__file__).parent\nIS_GIT_REPO = (HERE / \".git\").exists()\n\n\nif sys.implementation.name != \"cpython\":\n    NO_EXTENSIONS = True\n\n\nif (\n    not USE_SYSTEM_DEPS\n    and IS_GIT_REPO\n    and not (HERE / \"vendor/llhttp/README.md\").exists()\n):\n    print(\"Install submodules when building from git clone\", file=sys.stderr)\n    print(\"Hint:\", file=sys.stderr)\n    print(\"  git submodule update --init\", file=sys.stderr)\n    sys.exit(2)\n\n\n# NOTE: makefile cythonizes all Cython modules\n\nif USE_SYSTEM_DEPS:\n    import shlex\n\n    import pkgconfig\n\n    llhttp_sources = []\n    llhttp_kwargs = {\n        \"extra_compile_args\": shlex.split(pkgconfig.cfla...",
+    "output": {
+      "operation": "Socket Programming",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Create socket",
+          "expected_time": "422ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 2,
+          "action": "Bind address",
+          "expected_time": "371ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 3,
+          "action": "Listen for connection",
+          "expected_time": "391ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 4,
+          "action": "Accept connection",
+          "expected_time": "182ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 5,
+          "action": "Send/receive data",
+          "expected_time": "473ns",
+          "resource": "I/O"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this general_networking code",
+    "input": "Repository: urllib3/urllib3\nFile: CODE_OF_CONDUCT.md\nCode:\n\n# Contributor Covenant Code of Conduct\n\n## Our Pledge\n\nWe as members, contributors, and leaders pledge to make participation in our\ncommunity a harassment-free experience for everyone, regardless of age, body\nsize, visible or invisible disability, ethnicity, sex characteristics, gender\nidentity and expression, level of experience, education, socio-economic status,\nnationality, personal appearance, race, religion, or sexual identity\nand orientation.\n\nWe pledge to act and interact in ways that contribute to an open, welcoming,\ndiverse, inclusive, and healthy community.\n\n## Our Standards\n\nExamples of behavior that contributes to a positive environment for our\ncommunity include:\n\n* Demonstrating empathy and kindness toward other people\n* Being respectful of differing opinions, viewpoints, and experiences\n* Giving and gracefully accepting constructive feedback\n* Accepting responsibility and apologizing to those affected by our mistakes,\n  and learning from the experience\n* Focusing on what...",
+    "output": {
+      "operation": "General Networking",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Analyze code execution flow",
+          "expected_time": "196ns",
+          "resource": "CPU"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this http_requests code",
+    "input": "Repository: urllib3/urllib3\nFile: README.md\nCode:\n<h1 align=\"center\">\n\n![urllib3](https://github.com/urllib3/urllib3/raw/main/docs/_static/banner_github.svg)\n\n</h1>\n\n<p align=\"center\">\n  <a href=\"https://pypi.org/project/urllib3\"><img alt=\"PyPI Version\" src=\"https://img.shields.io/pypi/v/urllib3.svg?maxAge=86400\" /></a>\n  <a href=\"https://pypi.org/project/urllib3\"><img alt=\"Python Versions\" src=\"https://img.shields.io/pypi/pyversions/urllib3.svg?maxAge=86400\" /></a>\n  <a href=\"https://discord.gg/urllib3\"><img alt=\"Join our Discord\" src=\"https://img.shields.io/discord/756342717725933608?color=%237289da&label=discord\" /></a>\n  <a href=\"https://github.com/urllib3/urllib3/actions?query=workflow%3ACI\"><img alt=\"Coverage Status\" src=\"https://img.shields.io/badge/coverage-100%25-success\" /></a>\n  <a href=\"https://github.com/urllib3/urllib3/actions/workflows/ci.yml?query=branch%3Amain\"><img alt=\"Build Status on GitHub\" src=\"https://github.com/urllib3/urllib3/actions/workflows/ci.yml/badge.svg?branch:main&workflow:CI\" /></a>\n  <a href=\"https:/...",
+    "output": {
+      "operation": "Http Requests",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Prepare request headers",
+          "expected_time": "439ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 2,
+          "action": "Establish TCP connection",
+          "expected_time": "473ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 3,
+          "action": "Send HTTP request",
+          "expected_time": "413ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 4,
+          "action": "Receive HTTP response",
+          "expected_time": "431ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 5,
+          "action": "Parse response body",
+          "expected_time": "465ns",
+          "resource": "I/O"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this socket_programming code",
+    "input": "Repository: urllib3/urllib3\nFile: noxfile.py\nCode:\nfrom __future__ import annotations\n\nimport os\nimport re\nimport shutil\nimport sys\nfrom pathlib import Path\n\nimport nox\n\nnox.options.error_on_missing_interpreters = True\nnox.options.default_venv_backend = \"uv\"\n\n\ndef tests_impl(\n    session: nox.Session,\n    extras: str = \"socks,brotli,zstd,h2\",\n    # hypercorn dependency h2 compares bytes and strings\n    # https://github.com/python-hyper/h2/issues/1236\n    byte_string_comparisons: bool = False,\n    integration: bool = False,\n    pytest_extra_args: list[str] = [],\n    dependency_group: str = \"dev\",\n) -> None:\n    # Retrieve sys info from the Python implementation under test\n    # to avoid enabling memray when nox runs under CPython but tests PyPy\n    session_python_info = session.run(\n        \"python\",\n        \"-c\",\n        \"import sys; print(sys.implementation.name, sys.version_info.releaselevel)\",\n        silent=True,\n    ).strip()  # type: ignore[union-attr] # mypy doesn't know that silent=True  will return a string\n    implementation_...",
+    "output": {
+      "operation": "Socket Programming",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Create socket",
+          "expected_time": "225ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 2,
+          "action": "Bind address",
+          "expected_time": "468ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 3,
+          "action": "Listen for connection",
+          "expected_time": "225ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 4,
+          "action": "Accept connection",
+          "expected_time": "453ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 5,
+          "action": "Send/receive data",
+          "expected_time": "152ns",
+          "resource": "I/O"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this socket_programming code",
+    "input": "Repository: encode/httpx\nFile: CHANGELOG.md\nCode:\n# Changelog\n\nAll notable changes to this project will be documented in this file.\n\nThe format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).\n\n## [UNRELEASED]\n\n### Removed\n\n* Drop support for Python 3.8\n\n## 0.28.1 (6th December, 2024)\n\n* Fix SSL case where `verify=False` together with client side certificates.\n \n## 0.28.0 (28th November, 2024)\n\nBe aware that the default *JSON request bodies now use a more compact representation*. This is generally considered a prefered style, tho may require updates to test suites.\n\nThe 0.28 release includes a limited set of deprecations...\n\n**Deprecations**:\n\nWe are working towards a simplified SSL configuration API.\n\n*For users of the standard `verify=True` or `verify=False` cases, or `verify=<ssl_context>` case this should require no changes. The following cases have been deprecated...*\n\n* The `verify` argument as a string argument is now deprecated and will raise warnings.\n* The `cert` argument is now deprecated and will raise...",
+    "output": {
+      "operation": "Socket Programming",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Create socket",
+          "expected_time": "128ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 2,
+          "action": "Bind address",
+          "expected_time": "124ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 3,
+          "action": "Listen for connection",
+          "expected_time": "432ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 4,
+          "action": "Accept connection",
+          "expected_time": "199ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 5,
+          "action": "Send/receive data",
+          "expected_time": "255ns",
+          "resource": "I/O"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this general_networking code",
+    "input": "Repository: encode/httpx\nFile: LICENSE.md\nCode:\nCopyright \u00a9 2019, [Encode OSS Ltd](https://www.encode.io/).\nAll rights reserved.\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n* Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\n\n* Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n\n* Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EV...",
+    "output": {
+      "operation": "General Networking",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Analyze code execution flow",
+          "expected_time": "374ns",
+          "resource": "CPU"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this http_requests code",
+    "input": "Repository: encode/httpx\nFile: README.md\nCode:\n<p align=\"center\">\n  <a href=\"https://www.python-httpx.org/\"><img width=\"350\" height=\"208\" src=\"https://raw.githubusercontent.com/encode/httpx/master/docs/img/butterfly.png\" alt='HTTPX'></a>\n</p>\n\n<p align=\"center\"><strong>HTTPX</strong> <em>- A next-generation HTTP client for Python.</em></p>\n\n<p align=\"center\">\n<a href=\"https://github.com/encode/httpx/actions\">\n    <img src=\"https://github.com/encode/httpx/workflows/Test%20Suite/badge.svg\" alt=\"Test Suite\">\n</a>\n<a href=\"https://pypi.org/project/httpx/\">\n    <img src=\"https://badge.fury.io/py/httpx.svg\" alt=\"Package version\">\n</a>\n</p>\n\nHTTPX is a fully featured HTTP client library for Python 3. It includes **an integrated command line client**, has support for both **HTTP/1.1 and HTTP/2**, and provides both **sync and async APIs**.\n\n---\n\nInstall HTTPX using pip:\n\n```shell\n$ pip install httpx\n```\n\nNow, let's get started:\n\n```pycon\n>>> import httpx\n>>> r = httpx.get('https://www.example.org/')\n>>> r\n<Response [200 OK]>\n>>> r.status_co...",
+    "output": {
+      "operation": "Http Requests",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Prepare request headers",
+          "expected_time": "167ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 2,
+          "action": "Establish TCP connection",
+          "expected_time": "450ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 3,
+          "action": "Send HTTP request",
+          "expected_time": "99ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 4,
+          "action": "Receive HTTP response",
+          "expected_time": "329ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 5,
+          "action": "Parse response body",
+          "expected_time": "227ns",
+          "resource": "I/O"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this general_networking code",
+    "input": "Repository: scrapy/scrapy\nFile: CODE_OF_CONDUCT.md\nCode:\n\n# Contributor Covenant Code of Conduct\n\n## Our Pledge\n\nWe as members, contributors, and leaders pledge to make participation in our\ncommunity a harassment-free experience for everyone, regardless of age, body\nsize, visible or invisible disability, ethnicity, sex characteristics, gender\nidentity and expression, level of experience, education, socio-economic status,\nnationality, personal appearance, race, caste, color, religion, or sexual\nidentity and orientation.\n\nWe pledge to act and interact in ways that contribute to an open, welcoming,\ndiverse, inclusive, and healthy community.\n\n## Our Standards\n\nExamples of behavior that contributes to a positive environment for our\ncommunity include:\n\n* Demonstrating empathy and kindness toward other people\n* Being respectful of differing opinions, viewpoints, and experiences\n* Giving and gracefully accepting constructive feedback\n* Accepting responsibility and apologizing to those affected by our mistakes,\n  and learning from the experience\n* Fo...",
+    "output": {
+      "operation": "General Networking",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Analyze code execution flow",
+          "expected_time": "52ns",
+          "resource": "CPU"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this general_networking code",
+    "input": "Repository: scrapy/scrapy\nFile: CONTRIBUTING.md\nCode:\nThe guidelines for contributing are available here:\nhttps://docs.scrapy.org/en/master/contributing.html\n\nPlease do not abuse the issue tracker for support questions.\nIf your issue topic can be rephrased to \"How to ...?\", please use the\nsupport channels to get it answered: https://scrapy.org/community/\n...",
+    "output": {
+      "operation": "General Networking",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Analyze code execution flow",
+          "expected_time": "83ns",
+          "resource": "CPU"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this general_networking code",
+    "input": "Repository: scrapy/scrapy\nFile: INSTALL.md\nCode:\nFor information about installing Scrapy see:\n\n* [Local docs](docs/intro/install.rst)\n* [Online docs](https://docs.scrapy.org/en/latest/intro/install.html)\n...",
+    "output": {
+      "operation": "General Networking",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Analyze code execution flow",
+          "expected_time": "343ns",
+          "resource": "CPU"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this general_networking code",
+    "input": "Repository: scrapy/scrapy\nFile: SECURITY.md\nCode:\n# Security Policy\n\n## Supported Versions\n\n| Version | Supported          |\n| ------- | ------------------ |\n| 2.13.x     | :white_check_mark: |\n| < 2.13.x   | :x:                |\n\n## Reporting a Vulnerability\n\nPlease report the vulnerability using https://github.com/scrapy/scrapy/security/advisories/new.\n...",
+    "output": {
+      "operation": "General Networking",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Analyze code execution flow",
+          "expected_time": "448ns",
+          "resource": "CPU"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this async_networking code",
+    "input": "Repository: scrapy/scrapy\nFile: conftest.py\nCode:\nfrom __future__ import annotations\n\nfrom pathlib import Path\nfrom typing import TYPE_CHECKING\n\nimport pytest\nfrom twisted.web.http import H2_ENABLED\n\nfrom scrapy.utils.reactor import set_asyncio_event_loop_policy\nfrom tests.keys import generate_keys\nfrom tests.mockserver.http import MockServer\n\nif TYPE_CHECKING:\n    from collections.abc import Generator\n\n\ndef _py_files(folder):\n    return (str(p) for p in Path(folder).rglob(\"*.py\"))\n\n\ncollect_ignore = [\n    # may need extra deps\n    \"docs/_ext\",\n    # not a test, but looks like a test\n    \"scrapy/utils/testproc.py\",\n    \"scrapy/utils/testsite.py\",\n    \"tests/ftpserver.py\",\n    \"tests/mockserver.py\",\n    \"tests/pipelines.py\",\n    \"tests/spiders.py\",\n    # contains scripts to be run by tests/test_crawler.py::AsyncCrawlerProcessSubprocess\n    *_py_files(\"tests/AsyncCrawlerProcess\"),\n    # contains scripts to be run by tests/test_crawler.py::AsyncCrawlerRunnerSubprocess\n    *_py_files(\"tests/AsyncCrawlerRunner\"),\n    # contains scripts to ...",
+    "output": {
+      "operation": "Async Networking",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Analyze code execution flow",
+          "expected_time": "55ns",
+          "resource": "CPU"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling"
+    }
+  },
+  {
+    "instruction": "Decompose network operation: TCP 3-way handshake",
+    "input": "Synthetic operation details",
+    "output": {
+      "operation": "TCP 3-way handshake",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Send SYN packet",
+          "expected_time": "255ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 2,
+          "action": "Receive SYN-ACK packet",
+          "expected_time": "126ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 3,
+          "action": "Send final ACK packet",
+          "expected_time": "61ns",
+          "resource": "I/O"
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "Decompose network operation: DNS Lookup",
+    "input": "Synthetic operation details",
+    "output": {
+      "operation": "DNS Lookup",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Send DNS query to resolver",
+          "expected_time": "461ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 2,
+          "action": "Recursive resolver lookup",
+          "expected_time": "100ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 3,
+          "action": "Receive DNS response",
+          "expected_time": "291ns",
+          "resource": "I/O"
+        }
+      ]
+    }
+  },
+  {
+    "instruction": "Decompose network operation: TLS Handshake",
+    "input": "Synthetic operation details",
+    "output": {
+      "operation": "TLS Handshake",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Send ClientHello",
+          "expected_time": "138ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 2,
+          "action": "Receive ServerHello and certificate",
+          "expected_time": "212ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 3,
+          "action": "Verify server certificate",
+          "expected_time": "411ns",
+          "resource": "CPU"
+        }
+      ]
+    }
+  }
+]

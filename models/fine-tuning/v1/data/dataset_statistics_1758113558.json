@@ -1,0 +1,69 @@
+{
+  "total_examples": 125,
+  "source_distribution": {
+    "github_repository": 125
+  },
+  "category_distribution": {
+    "socket_programming": 35,
+    "dns_resolution": 26,
+    "http_requests": 18,
+    "network_security": 41,
+    "async_networking": 5
+  },
+  "complexity_distribution": {
+    "high": 105,
+    "extreme": 20
+  },
+  "resource_usage": {
+    "CPU": 400,
+    "I/O": 369,
+    "MEMORY": 52
+  },
+  "avg_code_length": 40.392,
+  "median_code_length": 41,
+  "most_common_functions": [
+    [
+      "void",
+      3
+    ],
+    [
+      "int",
+      3
+    ],
+    [
+      "main",
+      2
+    ],
+    [
+      "read_os_release",
+      1
+    ],
+    [
+      "read_table",
+      1
+    ],
+    [
+      "parse_args",
+      1
+    ],
+    [
+      "read_config",
+      1
+    ],
+    [
+      "commit_file",
+      1
+    ],
+    [
+      "checkout_mkosi",
+      1
+    ],
+    [
+      "update_mkosi",
+      1
+    ]
+  ],
+  "most_common_classes": [],
+  "duplicate_count": 2,
+  "processing_time_ms": 2945.1355934143066
+}

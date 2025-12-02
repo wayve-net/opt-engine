@@ -1,0 +1,78 @@
+{
+  "total_examples": 280,
+  "source_distribution": {
+    "github_repository": 269,
+    "synthetic_generation": 11
+  },
+  "category_distribution": {
+    "socket_programming": 35,
+    "tcp_connection_management": 5,
+    "dns_resolution": 26,
+    "http_requests": 18,
+    "general_networking": 100,
+    "async_networking": 5,
+    "network_security": 41,
+    "api_clients": 28,
+    "grpc": 5,
+    "tcp_udp": 7,
+    "proxy_tunneling": 5,
+    "quic_http3": 5
+  },
+  "complexity_distribution": {
+    "high": 118,
+    "medium": 140,
+    "extreme": 22
+  },
+  "resource_usage": {
+    "CPU": 999,
+    "I/O": 546,
+    "MEMORY": 52
+  },
+  "avg_code_length": 38.531598513011154,
+  "median_code_length": 36,
+  "most_common_functions": [
+    [
+      "int",
+      4
+    ],
+    [
+      "main",
+      4
+    ],
+    [
+      "void",
+      3
+    ],
+    [
+      "log_entry",
+      1
+    ],
+    [
+      "UINT32_C",
+      1
+    ],
+    [
+      "read_os_release",
+      1
+    ],
+    [
+      "notify",
+      1
+    ],
+    [
+      "notify_ready",
+      1
+    ],
+    [
+      "notify_reloading",
+      1
+    ],
+    [
+      "notify_stopping",
+      1
+    ]
+  ],
+  "most_common_classes": [],
+  "duplicate_count": 9,
+  "processing_time_ms": 3218.886137008667
+}

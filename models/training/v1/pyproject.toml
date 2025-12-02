@@ -1,0 +1,48 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "training"
+version = "0.1.0"
+description = "ML training pipeline"
+dependencies = [
+    # Add dependencies
+    # Core ML/DL
+    "torch",
+    "transformers",
+    "datasets",
+
+    # Data processing
+    "pandas",
+    "numpy",
+
+    # Web scraping & data collection
+    "beautifulsoup4",
+    "lxml",
+    "requests",
+
+    # Data sources
+    "kaggle", 
+
+    # Utilities (mostly built-in, but some may need installing)
+    # os, json, csv, subprocess, shutil, pathlib, time, zipfile, io, gzip are built-in
+]
+
+[tool.hatch.envs.default.scripts]
+install-deps = "pip install -e ."
+train = "python training_pipeline.py"
+collect-data = "python data_collector.py"
+compress = "python compression.py"
+
+[tool.hatch.envs.default]
+dependencies = [
+    # Development dependencies
+    "jupyter",
+    "matplotlib",
+    "seaborn",
+    "tqdm",
+]
+
+[too.hatch.build.targets.wheel]
+bypass-selection = true

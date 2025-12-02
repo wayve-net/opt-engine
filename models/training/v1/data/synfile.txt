@@ -1,0 +1,3284 @@
+[
+  {
+    "instruction": "Decompose and analyze this tcp_3-way_handshake code",
+    "input": "Repository: repo_0/module\nFile: file_0.py\nCode:\n# Example synthetic snippet for TCP 3-way handshake",
+    "output": {
+      "operation": "TCP 3-way handshake",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Send SYN packet",
+          "expected_time": "352ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 2,
+          "action": "Receive SYN-ACK packet",
+          "expected_time": "106ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 3,
+          "action": "Send final ACK packet",
+          "expected_time": "461ns",
+          "resource": "I/O"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this tcp_3-way_handshake code",
+    "input": "Repository: repo_1/module\nFile: file_1.py\nCode:\n# Example synthetic snippet for TCP 3-way handshake",
+    "output": {
+      "operation": "TCP 3-way handshake",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Send SYN packet",
+          "expected_time": "272ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 2,
+          "action": "Receive SYN-ACK packet",
+          "expected_time": "271ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 3,
+          "action": "Send final ACK packet",
+          "expected_time": "403ns",
+          "resource": "CPU"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this http_requests code",
+    "input": "Repository: repo_2/module\nFile: file_2.py\nCode:\n# Example synthetic snippet for Http Requests",
+    "output": {
+      "operation": "Http Requests",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Prepare request headers",
+          "expected_time": "427ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 2,
+          "action": "Establish TCP connection",
+          "expected_time": "118ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 3,
+          "action": "Send HTTP request",
+          "expected_time": "383ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 4,
+          "action": "Receive HTTP response",
+          "expected_time": "98ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 5,
+          "action": "Parse response body",
+          "expected_time": "242ns",
+          "resource": "I/O"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this http_requests code",
+    "input": "Repository: repo_3/module\nFile: file_3.py\nCode:\n# Example synthetic snippet for Http Requests",
+    "output": {
+      "operation": "Http Requests",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Prepare request headers",
+          "expected_time": "91ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 2,
+          "action": "Establish TCP connection",
+          "expected_time": "199ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 3,
+          "action": "Send HTTP request",
+          "expected_time": "482ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 4,
+          "action": "Receive HTTP response",
+          "expected_time": "106ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 5,
+          "action": "Parse response body",
+          "expected_time": "53ns",
+          "resource": "I/O"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this tls_handshake code",
+    "input": "Repository: repo_4/module\nFile: file_4.py\nCode:\n# Example synthetic snippet for TLS Handshake",
+    "output": {
+      "operation": "TLS Handshake",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Send ClientHello",
+          "expected_time": "299ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 2,
+          "action": "Receive ServerHello and certificate",
+          "expected_time": "362ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 3,
+          "action": "Verify server certificate",
+          "expected_time": "121ns",
+          "resource": "CPU"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this general_networking code",
+    "input": "Repository: repo_5/module\nFile: file_5.py\nCode:\n# Example synthetic snippet for General Networking",
+    "output": {
+      "operation": "General Networking",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Analyze code execution flow",
+          "expected_time": "159ns",
+          "resource": "I/O"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this async_networking code",
+    "input": "Repository: repo_6/module\nFile: file_6.py\nCode:\n# Example synthetic snippet for Async Networking",
+    "output": {
+      "operation": "Async Networking",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Initialize async event loop",
+          "expected_time": "208ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 2,
+          "action": "Create async task",
+          "expected_time": "470ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 3,
+          "action": "Await network response",
+          "expected_time": "132ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 4,
+          "action": "Process async result",
+          "expected_time": "275ns",
+          "resource": "I/O"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this dns_lookup code",
+    "input": "Repository: repo_7/module\nFile: file_7.py\nCode:\n# Example synthetic snippet for DNS Lookup",
+    "output": {
+      "operation": "DNS Lookup",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Send DNS query to resolver",
+          "expected_time": "74ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 2,
+          "action": "Recursive resolver lookup",
+          "expected_time": "297ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 3,
+          "action": "Receive DNS response",
+          "expected_time": "206ns",
+          "resource": "I/O"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this http_requests code",
+    "input": "Repository: repo_8/module\nFile: file_8.py\nCode:\n# Example synthetic snippet for Http Requests",
+    "output": {
+      "operation": "Http Requests",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Prepare request headers",
+          "expected_time": "180ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 2,
+          "action": "Establish TCP connection",
+          "expected_time": "446ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 3,
+          "action": "Send HTTP request",
+          "expected_time": "420ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 4,
+          "action": "Receive HTTP response",
+          "expected_time": "203ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 5,
+          "action": "Parse response body",
+          "expected_time": "178ns",
+          "resource": "I/O"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this tcp_3-way_handshake code",
+    "input": "Repository: repo_9/module\nFile: file_9.py\nCode:\n# Example synthetic snippet for TCP 3-way handshake",
+    "output": {
+      "operation": "TCP 3-way handshake",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Send SYN packet",
+          "expected_time": "322ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 2,
+          "action": "Receive SYN-ACK packet",
+          "expected_time": "268ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 3,
+          "action": "Send final ACK packet",
+          "expected_time": "113ns",
+          "resource": "I/O"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this socket_programming code",
+    "input": "Repository: repo_10/module\nFile: file_10.py\nCode:\n# Example synthetic snippet for Socket Programming",
+    "output": {
+      "operation": "Socket Programming",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Create socket",
+          "expected_time": "408ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 2,
+          "action": "Bind address",
+          "expected_time": "348ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 3,
+          "action": "Listen for connection",
+          "expected_time": "407ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 4,
+          "action": "Accept connection",
+          "expected_time": "186ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 5,
+          "action": "Send/receive data",
+          "expected_time": "284ns",
+          "resource": "CPU"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this dns_lookup code",
+    "input": "Repository: repo_11/module\nFile: file_11.py\nCode:\n# Example synthetic snippet for DNS Lookup",
+    "output": {
+      "operation": "DNS Lookup",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Send DNS query to resolver",
+          "expected_time": "475ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 2,
+          "action": "Recursive resolver lookup",
+          "expected_time": "59ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 3,
+          "action": "Receive DNS response",
+          "expected_time": "97ns",
+          "resource": "I/O"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this tcp_3-way_handshake code",
+    "input": "Repository: repo_12/module\nFile: file_12.py\nCode:\n# Example synthetic snippet for TCP 3-way handshake",
+    "output": {
+      "operation": "TCP 3-way handshake",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Send SYN packet",
+          "expected_time": "318ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 2,
+          "action": "Receive SYN-ACK packet",
+          "expected_time": "449ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 3,
+          "action": "Send final ACK packet",
+          "expected_time": "205ns",
+          "resource": "I/O"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this dns_lookup code",
+    "input": "Repository: repo_13/module\nFile: file_13.py\nCode:\n# Example synthetic snippet for DNS Lookup",
+    "output": {
+      "operation": "DNS Lookup",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Send DNS query to resolver",
+          "expected_time": "235ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 2,
+          "action": "Recursive resolver lookup",
+          "expected_time": "143ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 3,
+          "action": "Receive DNS response",
+          "expected_time": "97ns",
+          "resource": "I/O"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this general_networking code",
+    "input": "Repository: repo_14/module\nFile: file_14.py\nCode:\n# Example synthetic snippet for General Networking",
+    "output": {
+      "operation": "General Networking",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Analyze code execution flow",
+          "expected_time": "313ns",
+          "resource": "I/O"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this tls_handshake code",
+    "input": "Repository: repo_15/module\nFile: file_15.py\nCode:\n# Example synthetic snippet for TLS Handshake",
+    "output": {
+      "operation": "TLS Handshake",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Send ClientHello",
+          "expected_time": "305ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 2,
+          "action": "Receive ServerHello and certificate",
+          "expected_time": "191ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 3,
+          "action": "Verify server certificate",
+          "expected_time": "199ns",
+          "resource": "CPU"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this http_requests code",
+    "input": "Repository: repo_16/module\nFile: file_16.py\nCode:\n# Example synthetic snippet for Http Requests",
+    "output": {
+      "operation": "Http Requests",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Prepare request headers",
+          "expected_time": "264ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 2,
+          "action": "Establish TCP connection",
+          "expected_time": "425ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 3,
+          "action": "Send HTTP request",
+          "expected_time": "90ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 4,
+          "action": "Receive HTTP response",
+          "expected_time": "206ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 5,
+          "action": "Parse response body",
+          "expected_time": "448ns",
+          "resource": "I/O"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this async_networking code",
+    "input": "Repository: repo_17/module\nFile: file_17.py\nCode:\n# Example synthetic snippet for Async Networking",
+    "output": {
+      "operation": "Async Networking",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Initialize async event loop",
+          "expected_time": "112ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 2,
+          "action": "Create async task",
+          "expected_time": "293ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 3,
+          "action": "Await network response",
+          "expected_time": "423ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 4,
+          "action": "Process async result",
+          "expected_time": "73ns",
+          "resource": "I/O"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this api_clients code",
+    "input": "Repository: repo_18/module\nFile: file_18.py\nCode:\n# Example synthetic snippet for Api Clients",
+    "output": {
+      "operation": "Api Clients",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Define API endpoint and parameters",
+          "expected_time": "239ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 2,
+          "action": "Construct request payload",
+          "expected_time": "352ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 3,
+          "action": "Send request over network",
+          "expected_time": "171ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 4,
+          "action": "Process JSON response",
+          "expected_time": "290ns",
+          "resource": "CPU"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this api_clients code",
+    "input": "Repository: repo_19/module\nFile: file_19.py\nCode:\n# Example synthetic snippet for Api Clients",
+    "output": {
+      "operation": "Api Clients",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Define API endpoint and parameters",
+          "expected_time": "77ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 2,
+          "action": "Construct request payload",
+          "expected_time": "127ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 3,
+          "action": "Send request over network",
+          "expected_time": "117ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 4,
+          "action": "Process JSON response",
+          "expected_time": "67ns",
+          "resource": "I/O"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this http_requests code",
+    "input": "Repository: repo_20/module\nFile: file_20.py\nCode:\n# Example synthetic snippet for Http Requests",
+    "output": {
+      "operation": "Http Requests",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Prepare request headers",
+          "expected_time": "240ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 2,
+          "action": "Establish TCP connection",
+          "expected_time": "249ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 3,
+          "action": "Send HTTP request",
+          "expected_time": "281ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 4,
+          "action": "Receive HTTP response",
+          "expected_time": "296ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 5,
+          "action": "Parse response body",
+          "expected_time": "263ns",
+          "resource": "I/O"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this dns_lookup code",
+    "input": "Repository: repo_21/module\nFile: file_21.py\nCode:\n# Example synthetic snippet for DNS Lookup",
+    "output": {
+      "operation": "DNS Lookup",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Send DNS query to resolver",
+          "expected_time": "296ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 2,
+          "action": "Recursive resolver lookup",
+          "expected_time": "463ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 3,
+          "action": "Receive DNS response",
+          "expected_time": "185ns",
+          "resource": "I/O"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this http_requests code",
+    "input": "Repository: repo_22/module\nFile: file_22.py\nCode:\n# Example synthetic snippet for Http Requests",
+    "output": {
+      "operation": "Http Requests",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Prepare request headers",
+          "expected_time": "498ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 2,
+          "action": "Establish TCP connection",
+          "expected_time": "499ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 3,
+          "action": "Send HTTP request",
+          "expected_time": "377ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 4,
+          "action": "Receive HTTP response",
+          "expected_time": "152ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 5,
+          "action": "Parse response body",
+          "expected_time": "469ns",
+          "resource": "I/O"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this socket_programming code",
+    "input": "Repository: repo_23/module\nFile: file_23.py\nCode:\n# Example synthetic snippet for Socket Programming",
+    "output": {
+      "operation": "Socket Programming",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Create socket",
+          "expected_time": "306ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 2,
+          "action": "Bind address",
+          "expected_time": "356ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 3,
+          "action": "Listen for connection",
+          "expected_time": "370ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 4,
+          "action": "Accept connection",
+          "expected_time": "450ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 5,
+          "action": "Send/receive data",
+          "expected_time": "126ns",
+          "resource": "CPU"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this tcp_3-way_handshake code",
+    "input": "Repository: repo_24/module\nFile: file_24.py\nCode:\n# Example synthetic snippet for TCP 3-way handshake",
+    "output": {
+      "operation": "TCP 3-way handshake",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Send SYN packet",
+          "expected_time": "418ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 2,
+          "action": "Receive SYN-ACK packet",
+          "expected_time": "267ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 3,
+          "action": "Send final ACK packet",
+          "expected_time": "74ns",
+          "resource": "I/O"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this tls_handshake code",
+    "input": "Repository: repo_25/module\nFile: file_25.py\nCode:\n# Example synthetic snippet for TLS Handshake",
+    "output": {
+      "operation": "TLS Handshake",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Send ClientHello",
+          "expected_time": "418ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 2,
+          "action": "Receive ServerHello and certificate",
+          "expected_time": "238ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 3,
+          "action": "Verify server certificate",
+          "expected_time": "59ns",
+          "resource": "I/O"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this tls_handshake code",
+    "input": "Repository: repo_26/module\nFile: file_26.py\nCode:\n# Example synthetic snippet for TLS Handshake",
+    "output": {
+      "operation": "TLS Handshake",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Send ClientHello",
+          "expected_time": "419ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 2,
+          "action": "Receive ServerHello and certificate",
+          "expected_time": "477ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 3,
+          "action": "Verify server certificate",
+          "expected_time": "473ns",
+          "resource": "CPU"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this socket_programming code",
+    "input": "Repository: repo_27/module\nFile: file_27.py\nCode:\n# Example synthetic snippet for Socket Programming",
+    "output": {
+      "operation": "Socket Programming",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Create socket",
+          "expected_time": "71ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 2,
+          "action": "Bind address",
+          "expected_time": "143ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 3,
+          "action": "Listen for connection",
+          "expected_time": "319ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 4,
+          "action": "Accept connection",
+          "expected_time": "89ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 5,
+          "action": "Send/receive data",
+          "expected_time": "430ns",
+          "resource": "I/O"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this async_networking code",
+    "input": "Repository: repo_28/module\nFile: file_28.py\nCode:\n# Example synthetic snippet for Async Networking",
+    "output": {
+      "operation": "Async Networking",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Initialize async event loop",
+          "expected_time": "332ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 2,
+          "action": "Create async task",
+          "expected_time": "325ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 3,
+          "action": "Await network response",
+          "expected_time": "423ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 4,
+          "action": "Process async result",
+          "expected_time": "205ns",
+          "resource": "CPU"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this tcp_3-way_handshake code",
+    "input": "Repository: repo_29/module\nFile: file_29.py\nCode:\n# Example synthetic snippet for TCP 3-way handshake",
+    "output": {
+      "operation": "TCP 3-way handshake",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Send SYN packet",
+          "expected_time": "304ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 2,
+          "action": "Receive SYN-ACK packet",
+          "expected_time": "128ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 3,
+          "action": "Send final ACK packet",
+          "expected_time": "464ns",
+          "resource": "I/O"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this general_networking code",
+    "input": "Repository: repo_30/module\nFile: file_30.py\nCode:\n# Example synthetic snippet for General Networking",
+    "output": {
+      "operation": "General Networking",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Analyze code execution flow",
+          "expected_time": "296ns",
+          "resource": "CPU"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this tls_handshake code",
+    "input": "Repository: repo_31/module\nFile: file_31.py\nCode:\n# Example synthetic snippet for TLS Handshake",
+    "output": {
+      "operation": "TLS Handshake",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Send ClientHello",
+          "expected_time": "71ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 2,
+          "action": "Receive ServerHello and certificate",
+          "expected_time": "306ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 3,
+          "action": "Verify server certificate",
+          "expected_time": "206ns",
+          "resource": "CPU"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this general_networking code",
+    "input": "Repository: repo_32/module\nFile: file_32.py\nCode:\n# Example synthetic snippet for General Networking",
+    "output": {
+      "operation": "General Networking",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Analyze code execution flow",
+          "expected_time": "377ns",
+          "resource": "I/O"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this tls_handshake code",
+    "input": "Repository: repo_33/module\nFile: file_33.py\nCode:\n# Example synthetic snippet for TLS Handshake",
+    "output": {
+      "operation": "TLS Handshake",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Send ClientHello",
+          "expected_time": "461ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 2,
+          "action": "Receive ServerHello and certificate",
+          "expected_time": "199ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 3,
+          "action": "Verify server certificate",
+          "expected_time": "298ns",
+          "resource": "CPU"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this tcp_3-way_handshake code",
+    "input": "Repository: repo_34/module\nFile: file_34.py\nCode:\n# Example synthetic snippet for TCP 3-way handshake",
+    "output": {
+      "operation": "TCP 3-way handshake",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Send SYN packet",
+          "expected_time": "298ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 2,
+          "action": "Receive SYN-ACK packet",
+          "expected_time": "325ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 3,
+          "action": "Send final ACK packet",
+          "expected_time": "363ns",
+          "resource": "CPU"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this general_networking code",
+    "input": "Repository: repo_35/module\nFile: file_35.py\nCode:\n# Example synthetic snippet for General Networking",
+    "output": {
+      "operation": "General Networking",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Analyze code execution flow",
+          "expected_time": "116ns",
+          "resource": "I/O"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this tcp_3-way_handshake code",
+    "input": "Repository: repo_36/module\nFile: file_36.py\nCode:\n# Example synthetic snippet for TCP 3-way handshake",
+    "output": {
+      "operation": "TCP 3-way handshake",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Send SYN packet",
+          "expected_time": "309ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 2,
+          "action": "Receive SYN-ACK packet",
+          "expected_time": "186ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 3,
+          "action": "Send final ACK packet",
+          "expected_time": "146ns",
+          "resource": "CPU"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this tcp_3-way_handshake code",
+    "input": "Repository: repo_37/module\nFile: file_37.py\nCode:\n# Example synthetic snippet for TCP 3-way handshake",
+    "output": {
+      "operation": "TCP 3-way handshake",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Send SYN packet",
+          "expected_time": "113ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 2,
+          "action": "Receive SYN-ACK packet",
+          "expected_time": "387ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 3,
+          "action": "Send final ACK packet",
+          "expected_time": "170ns",
+          "resource": "I/O"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this api_clients code",
+    "input": "Repository: repo_38/module\nFile: file_38.py\nCode:\n# Example synthetic snippet for Api Clients",
+    "output": {
+      "operation": "Api Clients",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Define API endpoint and parameters",
+          "expected_time": "92ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 2,
+          "action": "Construct request payload",
+          "expected_time": "383ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 3,
+          "action": "Send request over network",
+          "expected_time": "209ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 4,
+          "action": "Process JSON response",
+          "expected_time": "435ns",
+          "resource": "I/O"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this general_networking code",
+    "input": "Repository: repo_39/module\nFile: file_39.py\nCode:\n# Example synthetic snippet for General Networking",
+    "output": {
+      "operation": "General Networking",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Analyze code execution flow",
+          "expected_time": "354ns",
+          "resource": "CPU"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this socket_programming code",
+    "input": "Repository: repo_40/module\nFile: file_40.py\nCode:\n# Example synthetic snippet for Socket Programming",
+    "output": {
+      "operation": "Socket Programming",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Create socket",
+          "expected_time": "302ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 2,
+          "action": "Bind address",
+          "expected_time": "156ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 3,
+          "action": "Listen for connection",
+          "expected_time": "133ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 4,
+          "action": "Accept connection",
+          "expected_time": "401ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 5,
+          "action": "Send/receive data",
+          "expected_time": "363ns",
+          "resource": "I/O"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this socket_programming code",
+    "input": "Repository: repo_41/module\nFile: file_41.py\nCode:\n# Example synthetic snippet for Socket Programming",
+    "output": {
+      "operation": "Socket Programming",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Create socket",
+          "expected_time": "328ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 2,
+          "action": "Bind address",
+          "expected_time": "195ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 3,
+          "action": "Listen for connection",
+          "expected_time": "123ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 4,
+          "action": "Accept connection",
+          "expected_time": "106ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 5,
+          "action": "Send/receive data",
+          "expected_time": "251ns",
+          "resource": "I/O"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this async_networking code",
+    "input": "Repository: repo_42/module\nFile: file_42.py\nCode:\n# Example synthetic snippet for Async Networking",
+    "output": {
+      "operation": "Async Networking",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Initialize async event loop",
+          "expected_time": "183ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 2,
+          "action": "Create async task",
+          "expected_time": "95ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 3,
+          "action": "Await network response",
+          "expected_time": "309ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 4,
+          "action": "Process async result",
+          "expected_time": "252ns",
+          "resource": "CPU"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this dns_lookup code",
+    "input": "Repository: repo_43/module\nFile: file_43.py\nCode:\n# Example synthetic snippet for DNS Lookup",
+    "output": {
+      "operation": "DNS Lookup",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Send DNS query to resolver",
+          "expected_time": "68ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 2,
+          "action": "Recursive resolver lookup",
+          "expected_time": "266ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 3,
+          "action": "Receive DNS response",
+          "expected_time": "151ns",
+          "resource": "I/O"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this async_networking code",
+    "input": "Repository: repo_44/module\nFile: file_44.py\nCode:\n# Example synthetic snippet for Async Networking",
+    "output": {
+      "operation": "Async Networking",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Initialize async event loop",
+          "expected_time": "334ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 2,
+          "action": "Create async task",
+          "expected_time": "329ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 3,
+          "action": "Await network response",
+          "expected_time": "361ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 4,
+          "action": "Process async result",
+          "expected_time": "303ns",
+          "resource": "CPU"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this http_requests code",
+    "input": "Repository: repo_45/module\nFile: file_45.py\nCode:\n# Example synthetic snippet for Http Requests",
+    "output": {
+      "operation": "Http Requests",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Prepare request headers",
+          "expected_time": "301ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 2,
+          "action": "Establish TCP connection",
+          "expected_time": "443ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 3,
+          "action": "Send HTTP request",
+          "expected_time": "365ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 4,
+          "action": "Receive HTTP response",
+          "expected_time": "111ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 5,
+          "action": "Parse response body",
+          "expected_time": "290ns",
+          "resource": "I/O"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this api_clients code",
+    "input": "Repository: repo_46/module\nFile: file_46.py\nCode:\n# Example synthetic snippet for Api Clients",
+    "output": {
+      "operation": "Api Clients",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Define API endpoint and parameters",
+          "expected_time": "311ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 2,
+          "action": "Construct request payload",
+          "expected_time": "231ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 3,
+          "action": "Send request over network",
+          "expected_time": "81ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 4,
+          "action": "Process JSON response",
+          "expected_time": "277ns",
+          "resource": "CPU"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this api_clients code",
+    "input": "Repository: repo_47/module\nFile: file_47.py\nCode:\n# Example synthetic snippet for Api Clients",
+    "output": {
+      "operation": "Api Clients",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Define API endpoint and parameters",
+          "expected_time": "432ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 2,
+          "action": "Construct request payload",
+          "expected_time": "322ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 3,
+          "action": "Send request over network",
+          "expected_time": "341ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 4,
+          "action": "Process JSON response",
+          "expected_time": "309ns",
+          "resource": "I/O"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this socket_programming code",
+    "input": "Repository: repo_48/module\nFile: file_48.py\nCode:\n# Example synthetic snippet for Socket Programming",
+    "output": {
+      "operation": "Socket Programming",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Create socket",
+          "expected_time": "94ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 2,
+          "action": "Bind address",
+          "expected_time": "380ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 3,
+          "action": "Listen for connection",
+          "expected_time": "243ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 4,
+          "action": "Accept connection",
+          "expected_time": "219ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 5,
+          "action": "Send/receive data",
+          "expected_time": "90ns",
+          "resource": "CPU"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this tcp_3-way_handshake code",
+    "input": "Repository: repo_49/module\nFile: file_49.py\nCode:\n# Example synthetic snippet for TCP 3-way handshake",
+    "output": {
+      "operation": "TCP 3-way handshake",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Send SYN packet",
+          "expected_time": "63ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 2,
+          "action": "Receive SYN-ACK packet",
+          "expected_time": "216ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 3,
+          "action": "Send final ACK packet",
+          "expected_time": "203ns",
+          "resource": "CPU"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this api_clients code",
+    "input": "Repository: repo_50/module\nFile: file_50.py\nCode:\n# Example synthetic snippet for Api Clients",
+    "output": {
+      "operation": "Api Clients",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Define API endpoint and parameters",
+          "expected_time": "182ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 2,
+          "action": "Construct request payload",
+          "expected_time": "135ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 3,
+          "action": "Send request over network",
+          "expected_time": "117ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 4,
+          "action": "Process JSON response",
+          "expected_time": "367ns",
+          "resource": "I/O"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this tcp_3-way_handshake code",
+    "input": "Repository: repo_51/module\nFile: file_51.py\nCode:\n# Example synthetic snippet for TCP 3-way handshake",
+    "output": {
+      "operation": "TCP 3-way handshake",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Send SYN packet",
+          "expected_time": "314ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 2,
+          "action": "Receive SYN-ACK packet",
+          "expected_time": "197ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 3,
+          "action": "Send final ACK packet",
+          "expected_time": "460ns",
+          "resource": "I/O"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this tcp_3-way_handshake code",
+    "input": "Repository: repo_52/module\nFile: file_52.py\nCode:\n# Example synthetic snippet for TCP 3-way handshake",
+    "output": {
+      "operation": "TCP 3-way handshake",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Send SYN packet",
+          "expected_time": "56ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 2,
+          "action": "Receive SYN-ACK packet",
+          "expected_time": "369ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 3,
+          "action": "Send final ACK packet",
+          "expected_time": "326ns",
+          "resource": "I/O"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this async_networking code",
+    "input": "Repository: repo_53/module\nFile: file_53.py\nCode:\n# Example synthetic snippet for Async Networking",
+    "output": {
+      "operation": "Async Networking",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Initialize async event loop",
+          "expected_time": "225ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 2,
+          "action": "Create async task",
+          "expected_time": "351ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 3,
+          "action": "Await network response",
+          "expected_time": "122ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 4,
+          "action": "Process async result",
+          "expected_time": "179ns",
+          "resource": "CPU"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this tls_handshake code",
+    "input": "Repository: repo_54/module\nFile: file_54.py\nCode:\n# Example synthetic snippet for TLS Handshake",
+    "output": {
+      "operation": "TLS Handshake",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Send ClientHello",
+          "expected_time": "146ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 2,
+          "action": "Receive ServerHello and certificate",
+          "expected_time": "466ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 3,
+          "action": "Verify server certificate",
+          "expected_time": "338ns",
+          "resource": "CPU"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this async_networking code",
+    "input": "Repository: repo_55/module\nFile: file_55.py\nCode:\n# Example synthetic snippet for Async Networking",
+    "output": {
+      "operation": "Async Networking",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Initialize async event loop",
+          "expected_time": "174ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 2,
+          "action": "Create async task",
+          "expected_time": "79ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 3,
+          "action": "Await network response",
+          "expected_time": "370ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 4,
+          "action": "Process async result",
+          "expected_time": "228ns",
+          "resource": "CPU"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this async_networking code",
+    "input": "Repository: repo_56/module\nFile: file_56.py\nCode:\n# Example synthetic snippet for Async Networking",
+    "output": {
+      "operation": "Async Networking",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Initialize async event loop",
+          "expected_time": "151ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 2,
+          "action": "Create async task",
+          "expected_time": "430ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 3,
+          "action": "Await network response",
+          "expected_time": "213ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 4,
+          "action": "Process async result",
+          "expected_time": "54ns",
+          "resource": "CPU"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this tcp_3-way_handshake code",
+    "input": "Repository: repo_57/module\nFile: file_57.py\nCode:\n# Example synthetic snippet for TCP 3-way handshake",
+    "output": {
+      "operation": "TCP 3-way handshake",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Send SYN packet",
+          "expected_time": "141ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 2,
+          "action": "Receive SYN-ACK packet",
+          "expected_time": "282ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 3,
+          "action": "Send final ACK packet",
+          "expected_time": "408ns",
+          "resource": "I/O"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this general_networking code",
+    "input": "Repository: repo_58/module\nFile: file_58.py\nCode:\n# Example synthetic snippet for General Networking",
+    "output": {
+      "operation": "General Networking",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Analyze code execution flow",
+          "expected_time": "487ns",
+          "resource": "CPU"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this dns_lookup code",
+    "input": "Repository: repo_59/module\nFile: file_59.py\nCode:\n# Example synthetic snippet for DNS Lookup",
+    "output": {
+      "operation": "DNS Lookup",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Send DNS query to resolver",
+          "expected_time": "67ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 2,
+          "action": "Recursive resolver lookup",
+          "expected_time": "198ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 3,
+          "action": "Receive DNS response",
+          "expected_time": "349ns",
+          "resource": "I/O"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this tcp_3-way_handshake code",
+    "input": "Repository: repo_60/module\nFile: file_60.py\nCode:\n# Example synthetic snippet for TCP 3-way handshake",
+    "output": {
+      "operation": "TCP 3-way handshake",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Send SYN packet",
+          "expected_time": "353ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 2,
+          "action": "Receive SYN-ACK packet",
+          "expected_time": "385ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 3,
+          "action": "Send final ACK packet",
+          "expected_time": "55ns",
+          "resource": "I/O"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this tls_handshake code",
+    "input": "Repository: repo_61/module\nFile: file_61.py\nCode:\n# Example synthetic snippet for TLS Handshake",
+    "output": {
+      "operation": "TLS Handshake",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Send ClientHello",
+          "expected_time": "97ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 2,
+          "action": "Receive ServerHello and certificate",
+          "expected_time": "72ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 3,
+          "action": "Verify server certificate",
+          "expected_time": "455ns",
+          "resource": "CPU"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this tls_handshake code",
+    "input": "Repository: repo_62/module\nFile: file_62.py\nCode:\n# Example synthetic snippet for TLS Handshake",
+    "output": {
+      "operation": "TLS Handshake",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Send ClientHello",
+          "expected_time": "146ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 2,
+          "action": "Receive ServerHello and certificate",
+          "expected_time": "187ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 3,
+          "action": "Verify server certificate",
+          "expected_time": "371ns",
+          "resource": "I/O"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this socket_programming code",
+    "input": "Repository: repo_63/module\nFile: file_63.py\nCode:\n# Example synthetic snippet for Socket Programming",
+    "output": {
+      "operation": "Socket Programming",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Create socket",
+          "expected_time": "194ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 2,
+          "action": "Bind address",
+          "expected_time": "102ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 3,
+          "action": "Listen for connection",
+          "expected_time": "207ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 4,
+          "action": "Accept connection",
+          "expected_time": "185ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 5,
+          "action": "Send/receive data",
+          "expected_time": "301ns",
+          "resource": "CPU"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this async_networking code",
+    "input": "Repository: repo_64/module\nFile: file_64.py\nCode:\n# Example synthetic snippet for Async Networking",
+    "output": {
+      "operation": "Async Networking",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Initialize async event loop",
+          "expected_time": "151ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 2,
+          "action": "Create async task",
+          "expected_time": "71ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 3,
+          "action": "Await network response",
+          "expected_time": "338ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 4,
+          "action": "Process async result",
+          "expected_time": "274ns",
+          "resource": "I/O"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this dns_lookup code",
+    "input": "Repository: repo_65/module\nFile: file_65.py\nCode:\n# Example synthetic snippet for DNS Lookup",
+    "output": {
+      "operation": "DNS Lookup",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Send DNS query to resolver",
+          "expected_time": "136ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 2,
+          "action": "Recursive resolver lookup",
+          "expected_time": "71ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 3,
+          "action": "Receive DNS response",
+          "expected_time": "224ns",
+          "resource": "I/O"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this api_clients code",
+    "input": "Repository: repo_66/module\nFile: file_66.py\nCode:\n# Example synthetic snippet for Api Clients",
+    "output": {
+      "operation": "Api Clients",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Define API endpoint and parameters",
+          "expected_time": "305ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 2,
+          "action": "Construct request payload",
+          "expected_time": "492ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 3,
+          "action": "Send request over network",
+          "expected_time": "97ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 4,
+          "action": "Process JSON response",
+          "expected_time": "113ns",
+          "resource": "CPU"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this tls_handshake code",
+    "input": "Repository: repo_67/module\nFile: file_67.py\nCode:\n# Example synthetic snippet for TLS Handshake",
+    "output": {
+      "operation": "TLS Handshake",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Send ClientHello",
+          "expected_time": "422ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 2,
+          "action": "Receive ServerHello and certificate",
+          "expected_time": "379ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 3,
+          "action": "Verify server certificate",
+          "expected_time": "168ns",
+          "resource": "CPU"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this socket_programming code",
+    "input": "Repository: repo_68/module\nFile: file_68.py\nCode:\n# Example synthetic snippet for Socket Programming",
+    "output": {
+      "operation": "Socket Programming",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Create socket",
+          "expected_time": "228ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 2,
+          "action": "Bind address",
+          "expected_time": "53ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 3,
+          "action": "Listen for connection",
+          "expected_time": "188ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 4,
+          "action": "Accept connection",
+          "expected_time": "55ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 5,
+          "action": "Send/receive data",
+          "expected_time": "159ns",
+          "resource": "I/O"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this socket_programming code",
+    "input": "Repository: repo_69/module\nFile: file_69.py\nCode:\n# Example synthetic snippet for Socket Programming",
+    "output": {
+      "operation": "Socket Programming",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Create socket",
+          "expected_time": "148ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 2,
+          "action": "Bind address",
+          "expected_time": "302ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 3,
+          "action": "Listen for connection",
+          "expected_time": "418ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 4,
+          "action": "Accept connection",
+          "expected_time": "346ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 5,
+          "action": "Send/receive data",
+          "expected_time": "363ns",
+          "resource": "I/O"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this tls_handshake code",
+    "input": "Repository: repo_70/module\nFile: file_70.py\nCode:\n# Example synthetic snippet for TLS Handshake",
+    "output": {
+      "operation": "TLS Handshake",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Send ClientHello",
+          "expected_time": "378ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 2,
+          "action": "Receive ServerHello and certificate",
+          "expected_time": "439ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 3,
+          "action": "Verify server certificate",
+          "expected_time": "289ns",
+          "resource": "CPU"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this tls_handshake code",
+    "input": "Repository: repo_71/module\nFile: file_71.py\nCode:\n# Example synthetic snippet for TLS Handshake",
+    "output": {
+      "operation": "TLS Handshake",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Send ClientHello",
+          "expected_time": "320ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 2,
+          "action": "Receive ServerHello and certificate",
+          "expected_time": "163ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 3,
+          "action": "Verify server certificate",
+          "expected_time": "244ns",
+          "resource": "I/O"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this api_clients code",
+    "input": "Repository: repo_72/module\nFile: file_72.py\nCode:\n# Example synthetic snippet for Api Clients",
+    "output": {
+      "operation": "Api Clients",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Define API endpoint and parameters",
+          "expected_time": "443ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 2,
+          "action": "Construct request payload",
+          "expected_time": "455ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 3,
+          "action": "Send request over network",
+          "expected_time": "147ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 4,
+          "action": "Process JSON response",
+          "expected_time": "444ns",
+          "resource": "CPU"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this general_networking code",
+    "input": "Repository: repo_73/module\nFile: file_73.py\nCode:\n# Example synthetic snippet for General Networking",
+    "output": {
+      "operation": "General Networking",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Analyze code execution flow",
+          "expected_time": "270ns",
+          "resource": "CPU"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this socket_programming code",
+    "input": "Repository: repo_74/module\nFile: file_74.py\nCode:\n# Example synthetic snippet for Socket Programming",
+    "output": {
+      "operation": "Socket Programming",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Create socket",
+          "expected_time": "367ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 2,
+          "action": "Bind address",
+          "expected_time": "330ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 3,
+          "action": "Listen for connection",
+          "expected_time": "460ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 4,
+          "action": "Accept connection",
+          "expected_time": "75ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 5,
+          "action": "Send/receive data",
+          "expected_time": "495ns",
+          "resource": "CPU"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this tcp_3-way_handshake code",
+    "input": "Repository: repo_75/module\nFile: file_75.py\nCode:\n# Example synthetic snippet for TCP 3-way handshake",
+    "output": {
+      "operation": "TCP 3-way handshake",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Send SYN packet",
+          "expected_time": "304ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 2,
+          "action": "Receive SYN-ACK packet",
+          "expected_time": "366ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 3,
+          "action": "Send final ACK packet",
+          "expected_time": "473ns",
+          "resource": "I/O"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this tcp_3-way_handshake code",
+    "input": "Repository: repo_76/module\nFile: file_76.py\nCode:\n# Example synthetic snippet for TCP 3-way handshake",
+    "output": {
+      "operation": "TCP 3-way handshake",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Send SYN packet",
+          "expected_time": "185ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 2,
+          "action": "Receive SYN-ACK packet",
+          "expected_time": "232ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 3,
+          "action": "Send final ACK packet",
+          "expected_time": "330ns",
+          "resource": "CPU"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this dns_lookup code",
+    "input": "Repository: repo_77/module\nFile: file_77.py\nCode:\n# Example synthetic snippet for DNS Lookup",
+    "output": {
+      "operation": "DNS Lookup",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Send DNS query to resolver",
+          "expected_time": "127ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 2,
+          "action": "Recursive resolver lookup",
+          "expected_time": "394ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 3,
+          "action": "Receive DNS response",
+          "expected_time": "395ns",
+          "resource": "I/O"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this socket_programming code",
+    "input": "Repository: repo_78/module\nFile: file_78.py\nCode:\n# Example synthetic snippet for Socket Programming",
+    "output": {
+      "operation": "Socket Programming",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Create socket",
+          "expected_time": "297ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 2,
+          "action": "Bind address",
+          "expected_time": "471ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 3,
+          "action": "Listen for connection",
+          "expected_time": "91ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 4,
+          "action": "Accept connection",
+          "expected_time": "462ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 5,
+          "action": "Send/receive data",
+          "expected_time": "350ns",
+          "resource": "I/O"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this general_networking code",
+    "input": "Repository: repo_79/module\nFile: file_79.py\nCode:\n# Example synthetic snippet for General Networking",
+    "output": {
+      "operation": "General Networking",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Analyze code execution flow",
+          "expected_time": "251ns",
+          "resource": "I/O"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this general_networking code",
+    "input": "Repository: repo_80/module\nFile: file_80.py\nCode:\n# Example synthetic snippet for General Networking",
+    "output": {
+      "operation": "General Networking",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Analyze code execution flow",
+          "expected_time": "457ns",
+          "resource": "I/O"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this tcp_3-way_handshake code",
+    "input": "Repository: repo_81/module\nFile: file_81.py\nCode:\n# Example synthetic snippet for TCP 3-way handshake",
+    "output": {
+      "operation": "TCP 3-way handshake",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Send SYN packet",
+          "expected_time": "380ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 2,
+          "action": "Receive SYN-ACK packet",
+          "expected_time": "238ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 3,
+          "action": "Send final ACK packet",
+          "expected_time": "262ns",
+          "resource": "I/O"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this dns_lookup code",
+    "input": "Repository: repo_82/module\nFile: file_82.py\nCode:\n# Example synthetic snippet for DNS Lookup",
+    "output": {
+      "operation": "DNS Lookup",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Send DNS query to resolver",
+          "expected_time": "258ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 2,
+          "action": "Recursive resolver lookup",
+          "expected_time": "124ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 3,
+          "action": "Receive DNS response",
+          "expected_time": "460ns",
+          "resource": "CPU"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this async_networking code",
+    "input": "Repository: repo_83/module\nFile: file_83.py\nCode:\n# Example synthetic snippet for Async Networking",
+    "output": {
+      "operation": "Async Networking",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Initialize async event loop",
+          "expected_time": "319ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 2,
+          "action": "Create async task",
+          "expected_time": "335ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 3,
+          "action": "Await network response",
+          "expected_time": "269ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 4,
+          "action": "Process async result",
+          "expected_time": "270ns",
+          "resource": "I/O"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this http_requests code",
+    "input": "Repository: repo_84/module\nFile: file_84.py\nCode:\n# Example synthetic snippet for Http Requests",
+    "output": {
+      "operation": "Http Requests",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Prepare request headers",
+          "expected_time": "237ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 2,
+          "action": "Establish TCP connection",
+          "expected_time": "429ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 3,
+          "action": "Send HTTP request",
+          "expected_time": "92ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 4,
+          "action": "Receive HTTP response",
+          "expected_time": "95ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 5,
+          "action": "Parse response body",
+          "expected_time": "446ns",
+          "resource": "CPU"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this socket_programming code",
+    "input": "Repository: repo_85/module\nFile: file_85.py\nCode:\n# Example synthetic snippet for Socket Programming",
+    "output": {
+      "operation": "Socket Programming",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Create socket",
+          "expected_time": "144ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 2,
+          "action": "Bind address",
+          "expected_time": "322ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 3,
+          "action": "Listen for connection",
+          "expected_time": "247ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 4,
+          "action": "Accept connection",
+          "expected_time": "65ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 5,
+          "action": "Send/receive data",
+          "expected_time": "104ns",
+          "resource": "I/O"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this socket_programming code",
+    "input": "Repository: repo_86/module\nFile: file_86.py\nCode:\n# Example synthetic snippet for Socket Programming",
+    "output": {
+      "operation": "Socket Programming",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Create socket",
+          "expected_time": "415ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 2,
+          "action": "Bind address",
+          "expected_time": "95ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 3,
+          "action": "Listen for connection",
+          "expected_time": "71ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 4,
+          "action": "Accept connection",
+          "expected_time": "330ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 5,
+          "action": "Send/receive data",
+          "expected_time": "358ns",
+          "resource": "I/O"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this api_clients code",
+    "input": "Repository: repo_87/module\nFile: file_87.py\nCode:\n# Example synthetic snippet for Api Clients",
+    "output": {
+      "operation": "Api Clients",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Define API endpoint and parameters",
+          "expected_time": "451ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 2,
+          "action": "Construct request payload",
+          "expected_time": "492ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 3,
+          "action": "Send request over network",
+          "expected_time": "374ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 4,
+          "action": "Process JSON response",
+          "expected_time": "110ns",
+          "resource": "CPU"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this dns_lookup code",
+    "input": "Repository: repo_88/module\nFile: file_88.py\nCode:\n# Example synthetic snippet for DNS Lookup",
+    "output": {
+      "operation": "DNS Lookup",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Send DNS query to resolver",
+          "expected_time": "62ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 2,
+          "action": "Recursive resolver lookup",
+          "expected_time": "172ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 3,
+          "action": "Receive DNS response",
+          "expected_time": "188ns",
+          "resource": "CPU"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this dns_lookup code",
+    "input": "Repository: repo_89/module\nFile: file_89.py\nCode:\n# Example synthetic snippet for DNS Lookup",
+    "output": {
+      "operation": "DNS Lookup",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Send DNS query to resolver",
+          "expected_time": "269ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 2,
+          "action": "Recursive resolver lookup",
+          "expected_time": "179ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 3,
+          "action": "Receive DNS response",
+          "expected_time": "79ns",
+          "resource": "CPU"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this http_requests code",
+    "input": "Repository: repo_90/module\nFile: file_90.py\nCode:\n# Example synthetic snippet for Http Requests",
+    "output": {
+      "operation": "Http Requests",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Prepare request headers",
+          "expected_time": "287ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 2,
+          "action": "Establish TCP connection",
+          "expected_time": "96ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 3,
+          "action": "Send HTTP request",
+          "expected_time": "341ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 4,
+          "action": "Receive HTTP response",
+          "expected_time": "443ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 5,
+          "action": "Parse response body",
+          "expected_time": "77ns",
+          "resource": "I/O"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this dns_lookup code",
+    "input": "Repository: repo_91/module\nFile: file_91.py\nCode:\n# Example synthetic snippet for DNS Lookup",
+    "output": {
+      "operation": "DNS Lookup",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Send DNS query to resolver",
+          "expected_time": "224ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 2,
+          "action": "Recursive resolver lookup",
+          "expected_time": "70ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 3,
+          "action": "Receive DNS response",
+          "expected_time": "225ns",
+          "resource": "CPU"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this dns_lookup code",
+    "input": "Repository: repo_92/module\nFile: file_92.py\nCode:\n# Example synthetic snippet for DNS Lookup",
+    "output": {
+      "operation": "DNS Lookup",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Send DNS query to resolver",
+          "expected_time": "77ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 2,
+          "action": "Recursive resolver lookup",
+          "expected_time": "59ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 3,
+          "action": "Receive DNS response",
+          "expected_time": "237ns",
+          "resource": "I/O"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this tls_handshake code",
+    "input": "Repository: repo_93/module\nFile: file_93.py\nCode:\n# Example synthetic snippet for TLS Handshake",
+    "output": {
+      "operation": "TLS Handshake",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Send ClientHello",
+          "expected_time": "478ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 2,
+          "action": "Receive ServerHello and certificate",
+          "expected_time": "235ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 3,
+          "action": "Verify server certificate",
+          "expected_time": "378ns",
+          "resource": "I/O"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this tcp_3-way_handshake code",
+    "input": "Repository: repo_94/module\nFile: file_94.py\nCode:\n# Example synthetic snippet for TCP 3-way handshake",
+    "output": {
+      "operation": "TCP 3-way handshake",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Send SYN packet",
+          "expected_time": "380ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 2,
+          "action": "Receive SYN-ACK packet",
+          "expected_time": "237ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 3,
+          "action": "Send final ACK packet",
+          "expected_time": "247ns",
+          "resource": "I/O"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this dns_lookup code",
+    "input": "Repository: repo_95/module\nFile: file_95.py\nCode:\n# Example synthetic snippet for DNS Lookup",
+    "output": {
+      "operation": "DNS Lookup",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Send DNS query to resolver",
+          "expected_time": "229ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 2,
+          "action": "Recursive resolver lookup",
+          "expected_time": "441ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 3,
+          "action": "Receive DNS response",
+          "expected_time": "381ns",
+          "resource": "I/O"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this http_requests code",
+    "input": "Repository: repo_96/module\nFile: file_96.py\nCode:\n# Example synthetic snippet for Http Requests",
+    "output": {
+      "operation": "Http Requests",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Prepare request headers",
+          "expected_time": "223ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 2,
+          "action": "Establish TCP connection",
+          "expected_time": "190ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 3,
+          "action": "Send HTTP request",
+          "expected_time": "384ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 4,
+          "action": "Receive HTTP response",
+          "expected_time": "78ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 5,
+          "action": "Parse response body",
+          "expected_time": "255ns",
+          "resource": "I/O"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this dns_lookup code",
+    "input": "Repository: repo_97/module\nFile: file_97.py\nCode:\n# Example synthetic snippet for DNS Lookup",
+    "output": {
+      "operation": "DNS Lookup",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Send DNS query to resolver",
+          "expected_time": "392ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 2,
+          "action": "Recursive resolver lookup",
+          "expected_time": "146ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 3,
+          "action": "Receive DNS response",
+          "expected_time": "262ns",
+          "resource": "CPU"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this async_networking code",
+    "input": "Repository: repo_98/module\nFile: file_98.py\nCode:\n# Example synthetic snippet for Async Networking",
+    "output": {
+      "operation": "Async Networking",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Initialize async event loop",
+          "expected_time": "407ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 2,
+          "action": "Create async task",
+          "expected_time": "68ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 3,
+          "action": "Await network response",
+          "expected_time": "255ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 4,
+          "action": "Process async result",
+          "expected_time": "179ns",
+          "resource": "CPU"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  },
+  {
+    "instruction": "Decompose and analyze this api_clients code",
+    "input": "Repository: repo_99/module\nFile: file_99.py\nCode:\n# Example synthetic snippet for Api Clients",
+    "output": {
+      "operation": "Api Clients",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Define API endpoint and parameters",
+          "expected_time": "321ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 2,
+          "action": "Construct request payload",
+          "expected_time": "225ns",
+          "resource": "CPU"
+        },
+        {
+          "step": 3,
+          "action": "Send request over network",
+          "expected_time": "463ns",
+          "resource": "I/O"
+        },
+        {
+          "step": 4,
+          "action": "Process JSON response",
+          "expected_time": "319ns",
+          "resource": "I/O"
+        }
+      ]
+    },
+    "metadata": {
+      "source": "github_scrapling_synthetic"
+    }
+  }
+]

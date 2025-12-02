@@ -1,0 +1,100 @@
+[
+  {
+    "instruction": "Analyze and decompose this socket_programming code from a production repository",
+    "input": "Repository: https://github.com/systemd/systemd\nFile: src/core/bpf/socket-bind/socket-bind-api.bpf.h\n\nCode:\n/* SPDX-License-Identifier: LGPL-2.1-or-later */\n\n/* The SPDX header above is actually correct in claiming this was\n * LGPL-2.1-or-later, because it is. Since the kernel doesn't consider that\n * compatible with GPL we will claim this to be GPL however, which should be\n * fine given that LGPL-2.1-or-later downgrades to GPL if needed.\n */\n\n#include <linux/types.h>\n#include <stdint.h>\n\n/*\n * Bind rule is matched with socket fields accessible to cgroup/bind{4,6} hook\n * through bpf_sock_addr struct.\n * 'address_family' is expected to be one of AF_UNSPEC, AF_INET, AF_INET6 or the\n * magic SOCKET_BIND_RULE_AF_MATCH_NOTHING.\n * Matching by family is bypassed for rules with AF_UNSPEC set, which makes the\n * rest of a rule applicable for both IPv4 and IPv6 addresses.\n * If SOCKET_BIND_RULE_AF_MATCH_NOTHING is set the rule fails unconditionally\n * and other checks are skipped.\n * If matching by family is either successful or bypassed, a rule and a socket\n * are matched by ip protocol.\n * If 'protocol' is 0, matching is bypassed.\n * 'nr_ports' and 'port_min' fields specify a set of ports to match a user port\n * with.\n * If 'nr_ports' is 0, matching by port is bypassed, making that rule applicable\n * for all possible ports, e.g. [1, 65535] range. Thus a rule with\n * 'address_family', 'protocol' and 'nr_ports' equal to AF_UNSPEC, 0 and 0\n * correspondingly forms 'allow any' or 'deny any' cases.\n * For positive 'nr_ports', a user_port lying in a range from 'port_min' to'\n * 'port_min' + 'nr_ports' exclusively is considered to be a match. 'nr_ports'\n * equalling to 1 forms a rule for a single port.\n * Ports are in host order.\n *\n * Examples:\n * AF_UNSPEC, 1, 0, 7777: match IPv4 and IPv6 addresses with 7777 user port;\n *\n * AF_INET, 1023, 0, 1: match IPv4 addresses with user port in [1, 1023]\n * range inclusively;\n *\n * AF_INET6, 0, 0, 0: match IPv6 addresses;\n *\n * AF_UNSPEC, 0, 0, 0: match IPv4 and IPv6 addresses;\n *\n * AF_INET6, IPPROTO_TCP, 0, 0: match IPv6/TCP addresses.\n */\n\nstruct socket_bind_rule {\n        __u32 address_family;\n        __u32 protocol;\n        __u16 nr_ports;\n        __u16 port_min;\n};\n\n#define SOCKET_BIND_MAX_RULES 128\n#define SOCKET_BIND_RULE_AF_MATCH_NOTHING UINT32_MAX\n",
+    "output": {
+      "operation": "Socket Programming Implementation",
+      "category": "socket_programming",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Create socket object",
+          "expected_time": "72μs",
+          "resource": "CPU",
+          "criticality": "medium",
+          "parallelizable": false,
+          "dependencies": []
+        },
+        {
+          "step": 2,
+          "action": "Configure socket options",
+          "expected_time": "317μs",
+          "resource": "CPU",
+          "criticality": "low",
+          "parallelizable": false,
+          "dependencies": []
+        },
+        {
+          "step": 3,
+          "action": "Bind socket to address and port",
+          "expected_time": "503893μs",
+          "resource": "I/O",
+          "criticality": "high",
+          "parallelizable": false,
+          "dependencies": [
+            0,
+            1
+          ]
+        },
+        {
+          "step": 4,
+          "action": "Listen for incoming connections",
+          "expected_time": "812427μs",
+          "resource": "I/O",
+          "criticality": "high",
+          "parallelizable": false,
+          "dependencies": [
+            2
+          ]
+        },
+        {
+          "step": 5,
+          "action": "Accept client connection",
+          "expected_time": "403379μs",
+          "resource": "I/O",
+          "criticality": "high",
+          "parallelizable": false,
+          "dependencies": [
+            3
+          ]
+        },
+        {
+          "step": 6,
+          "action": "Send/receive data packets",
+          "expected_time": "727160μs",
+          "resource": "I/O",
+          "criticality": "high",
+          "parallelizable": false,
+          "dependencies": [
+            4
+          ]
+        },
+        {
+          "step": 7,
+          "action": "Handle connection cleanup and close",
+          "expected_time": "442μs",
+          "resource": "CPU",
+          "criticality": "medium",
+          "parallelizable": false,
+          "dependencies": [
+            5
+          ]
+        }
+      ],
+      "complexity": "high",
+      "estimated_total_time": "2447690μs",
+      "parallelizable_steps": [],
+      "critical_path_length": "1539904μs",
+      "metadata": {
+        "functions_found": [],
+        "classes_found": [],
+        "imports": [],
+        "lines_of_code": 51,
+        "complexity_score": 4.117647058823529
+      }
+    },
+    "metadata": {
+      "source": "github_repository",
+      "category": "socket_programming",
+      "complexity": "high",
+      "code_analysis": 

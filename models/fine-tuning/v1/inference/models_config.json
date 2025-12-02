@@ -1,0 +1,40 @@
+{
+  "models": [
+    {
+      "name": "network_operations",
+      "model_path": "./codet5-network-teacher",
+      "task_type": "decomposition",
+      "generation_config": {
+        "max_length": 256,
+        "num_beams": 2,
+        "temperature": 0.7,
+        "do_sample": true
+      },
+      "device": "cpu"
+    },
+    {
+      "name": "code_generation",
+      "model_path": "./codet5-code-teacher",
+      "task_type": "code_gen",
+      "generation_config": {
+        "max_length": 512,
+        "num_beams": 3,
+        "temperature": 0.5,
+        "do_sample": true
+      },
+      "device": "cuda"
+    },
+    {
+      "name": "text_summarization",
+      "model_path": "./codet5-summary-teacher",
+      "task_type": "summarization",
+      "generation_config": {
+        "max_length": 200,
+        "num_beams": 4,
+        "temperature": 0.3,
+        "do_sample": false
+      },
+      "device": "mps"
+    }
+  ]
+}

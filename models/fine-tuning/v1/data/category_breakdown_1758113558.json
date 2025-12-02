@@ -1,0 +1,247 @@
+{
+  "categories": {
+    "socket_programming": {
+      "count": 35,
+      "avg_steps": 7.0,
+      "avg_time_us": 815187.5142857142,
+      "examples": [
+        {
+          "instruction": "Analyze and decompose this socket_programming code from a production repository...",
+          "complexity": "high",
+          "steps": 7,
+          "source": "github_repository"
+        },
+        {
+          "instruction": "Analyze and decompose this socket_programming code from a production repository...",
+          "complexity": "high",
+          "steps": 7,
+          "source": "github_repository"
+        },
+        {
+          "instruction": "Analyze and decompose this socket_programming code from a production repository...",
+          "complexity": "high",
+          "steps": 7,
+          "source": "github_repository"
+        },
+        {
+          "instruction": "Analyze and decompose this socket_programming code from a production repository...",
+          "complexity": "high",
+          "steps": 7,
+          "source": "github_repository"
+        },
+        {
+          "instruction": "Analyze and decompose this socket_programming code from a production repository...",
+          "complexity": "high",
+          "steps": 7,
+          "source": "github_repository"
+        }
+      ]
+    },
+    "dns_resolution": {
+      "count": 26,
+      "avg_steps": 6.0,
+      "avg_time_us": 332517.0,
+      "examples": [
+        {
+          "instruction": "Analyze and decompose this dns_resolution code from a production repository...",
+          "complexity": "high",
+          "steps": 6,
+          "source": "github_repository"
+        },
+        {
+          "instruction": "Analyze and decompose this dns_resolution code from a production repository...",
+          "complexity": "high",
+          "steps": 6,
+          "source": "github_repository"
+        },
+        {
+          "instruction": "Analyze and decompose this dns_resolution code from a production repository...",
+          "complexity": "high",
+          "steps": 6,
+          "source": "github_repository"
+        },
+        {
+          "instruction": "Analyze and decompose this dns_resolution code from a production repository...",
+          "complexity": "high",
+          "steps": 6,
+          "source": "github_repository"
+        },
+        {
+          "instruction": "Analyze and decompose this dns_resolution code from a production repository...",
+          "complexity": "high",
+          "steps": 6,
+          "source": "github_repository"
+        }
+      ]
+    },
+    "http_requests": {
+      "count": 18,
+      "avg_steps": 8.0,
+      "avg_time_us": 1327918.888888889,
+      "examples": [
+        {
+          "instruction": "Analyze and decompose this http_requests code from a production repository...",
+          "complexity": "extreme",
+          "steps": 8,
+          "source": "github_repository"
+        },
+        {
+          "instruction": "Analyze and decompose this http_requests code from a production repository...",
+          "complexity": "extreme",
+          "steps": 8,
+          "source": "github_repository"
+        },
+        {
+          "instruction": "Analyze and decompose this http_requests code from a production repository...",
+          "complexity": "extreme",
+          "steps": 8,
+          "source": "github_repository"
+        },
+        {
+          "instruction": "Analyze and decompose this http_requests code from a production repository...",
+          "complexity": "extreme",
+          "steps": 8,
+          "source": "github_repository"
+        },
+        {
+          "instruction": "Analyze and decompose this http_requests code from a production repository...",
+          "complexity": "extreme",
+          "steps": 8,
+          "source": "github_repository"
+        }
+      ]
+    },
+    "network_security": {
+      "count": 41,
+      "avg_steps": 6.0,
+      "avg_time_us": 1005751.0487804879,
+      "examples": [
+        {
+          "instruction": "Analyze and decompose this network_security code from a production repository...",
+          "complexity": "high",
+          "steps": 6,
+          "source": "github_repository"
+        },
+        {
+          "instruction": "Analyze and decompose this network_security code from a production repository...",
+          "complexity": "high",
+          "steps": 6,
+          "source": "github_repository"
+        },
+        {
+          "instruction": "Analyze and decompose this network_security code from a production repository...",
+          "complexity": "high",
+          "steps": 6,
+          "source": "github_repository"
+        },
+        {
+          "instruction": "Analyze and decompose this network_security code from a production repository...",
+          "complexity": "high",
+          "steps": 6,
+          "source": "github_repository"
+        },
+        {
+          "instruction": "Analyze and decompose this network_security code from a production repository...",
+          "complexity": "high",
+          "steps": 6,
+          "source": "github_repository"
+        }
+      ]
+    },
+    "async_networking": {
+      "count": 5,
+      "avg_steps": 6.0,
+      "avg_time_us": 267966.0,
+      "examples": [
+        {
+          "instruction": "Examine and structure this async_networking code from a production repository...",
+          "complexity": "high",
+          "steps": 6,
+          "source": "github_repository"
+        },
+        {
+          "instruction": "Examine and structure this async_networking code from a production repository...",
+          "complexity": "high",
+          "steps": 6,
+          "source": "github_repository"
+        },
+        {
+          "instruction": "Examine and structure this async_networking code from a production repository...",
+          "complexity": "high",
+          "steps": 6,
+          "source": "github_repository"
+        },
+        {
+          "instruction": "Analyze and decompose this async_networking code from a production repository...",
+          "complexity": "high",
+          "steps": 6,
+          "source": "github_repository"
+        },
+        {
+          "instruction": "Analyze and break down this async_networking code from a production repository...",
+          "complexity": "high",
+          "steps": 6,
+          "source": "github_repository"
+        }
+      ]
+    }
+  },
+  "complexity_by_category": {
+    "socket_programming": {
+      "high": 35
+    },
+    "dns_resolution": {
+      "high": 26
+    },
+    "http_requests": {
+      "extreme": 18
+    },
+    "network_security": {
+      "high": 39,
+      "extreme": 2
+    },
+    "async_networking": {
+      "high": 5
+    }
+  },
+  "resource_usage_by_category": {
+    "socket_programming": {
+      "CPU": 105,
+      "I/O": 140
+    },
+    "dns_resolution": {
+      "CPU": 52,
+      "MEMORY": 52,
+      "I/O": 52
+    },
+    "http_requests": {
+      "CPU": 54,
+      "I/O": 90
+    },
+    "network_security": {
+      "CPU": 164,
+      "I/O": 82
+    },
+    "async_networking": {
+      "CPU": 25,
+      "I/O": 5
+    }
+  },
+  "sources_by_category": {
+    "socket_programming": {
+      "github_repository": 35
+    },
+    "dns_resolution": {
+      "github_repository": 26
+    },
+    "http_requests": {
+      "github_repository": 18
+    },
+    "network_security": {
+      "github_repository": 41
+    },
+    "async_networking": {
+      "github_repository": 5
+    }
+  }
+}

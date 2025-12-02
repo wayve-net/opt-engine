@@ -1,0 +1,580 @@
+{
+  "categories": {
+    "socket_programming": {
+      "count": 35,
+      "avg_steps": 7.0,
+      "avg_time_us": 830175.2857142857,
+      "examples": [
+        {
+          "instruction": "Analyze and decompose this socket_programming code from a production repository...",
+          "complexity": "high",
+          "steps": 7,
+          "source": "github_repository"
+        },
+        {
+          "instruction": "Analyze and decompose this socket_programming code from a production repository...",
+          "complexity": "high",
+          "steps": 7,
+          "source": "github_repository"
+        },
+        {
+          "instruction": "Analyze and decompose this socket_programming code from a production repository...",
+          "complexity": "high",
+          "steps": 7,
+          "source": "github_repository"
+        },
+        {
+          "instruction": "Analyze and decompose this socket_programming code from a production repository...",
+          "complexity": "high",
+          "steps": 7,
+          "source": "github_repository"
+        },
+        {
+          "instruction": "Analyze and decompose this socket_programming code from a production repository...",
+          "complexity": "high",
+          "steps": 7,
+          "source": "github_repository"
+        }
+      ]
+    },
+    "tcp_connection_management": {
+      "count": 5,
+      "avg_steps": 5.0,
+      "avg_time_us": 2102524.0,
+      "examples": [
+        {
+          "instruction": "Decompose the network operation: TCP 3-way handshake...",
+          "complexity": "medium",
+          "steps": 5,
+          "source": "synthetic_generation"
+        },
+        {
+          "instruction": "Decompose the network operation: TCP 3-way handshake...",
+          "complexity": "medium",
+          "steps": 5,
+          "source": "synthetic_generation"
+        },
+        {
+          "instruction": "Decompose the network operation: TCP 3-way handshake...",
+          "complexity": "medium",
+          "steps": 5,
+          "source": "synthetic_generation"
+        },
+        {
+          "instruction": "Decompose the network operation: TCP 3-way handshake...",
+          "complexity": "medium",
+          "steps": 5,
+          "source": "synthetic_generation"
+        },
+        {
+          "instruction": "Decompose the network operation: TCP 3-way handshake...",
+          "complexity": "medium",
+          "steps": 5,
+          "source": "synthetic_generation"
+        }
+      ]
+    },
+    "dns_resolution": {
+      "count": 26,
+      "avg_steps": 6.0,
+      "avg_time_us": 424792.1923076923,
+      "examples": [
+        {
+          "instruction": "Analyze and decompose this dns_resolution code from a production repository...",
+          "complexity": "high",
+          "steps": 6,
+          "source": "github_repository"
+        },
+        {
+          "instruction": "Analyze and decompose this dns_resolution code from a production repository...",
+          "complexity": "high",
+          "steps": 6,
+          "source": "github_repository"
+        },
+        {
+          "instruction": "Analyze and decompose this dns_resolution code from a production repository...",
+          "complexity": "high",
+          "steps": 6,
+          "source": "github_repository"
+        },
+        {
+          "instruction": "Analyze and decompose this dns_resolution code from a production repository...",
+          "complexity": "high",
+          "steps": 6,
+          "source": "github_repository"
+        },
+        {
+          "instruction": "Analyze and decompose this dns_resolution code from a production repository...",
+          "complexity": "high",
+          "steps": 6,
+          "source": "github_repository"
+        }
+      ]
+    },
+    "http_requests": {
+      "count": 18,
+      "avg_steps": 8.0,
+      "avg_time_us": 1306451.388888889,
+      "examples": [
+        {
+          "instruction": "Analyze and decompose this http_requests code from a production repository...",
+          "complexity": "extreme",
+          "steps": 8,
+          "source": "github_repository"
+        },
+        {
+          "instruction": "Analyze and decompose this http_requests code from a production repository...",
+          "complexity": "extreme",
+          "steps": 8,
+          "source": "github_repository"
+        },
+        {
+          "instruction": "Analyze and decompose this http_requests code from a production repository...",
+          "complexity": "extreme",
+          "steps": 8,
+          "source": "github_repository"
+        },
+        {
+          "instruction": "Analyze and decompose this http_requests code from a production repository...",
+          "complexity": "extreme",
+          "steps": 8,
+          "source": "github_repository"
+        },
+        {
+          "instruction": "Analyze and decompose this http_requests code from a production repository...",
+          "complexity": "extreme",
+          "steps": 8,
+          "source": "github_repository"
+        }
+      ]
+    },
+    "general_networking": {
+      "count": 100,
+      "avg_steps": 5.0,
+      "avg_time_us": 113298.86999999998,
+      "examples": [
+        {
+          "instruction": "Analyze and decompose this general_networking code from a production repository...",
+          "complexity": "medium",
+          "steps": 5,
+          "source": "github_repository"
+        },
+        {
+          "instruction": "Analyze and decompose this general_networking code from a production repository...",
+          "complexity": "high",
+          "steps": 5,
+          "source": "github_repository"
+        },
+        {
+          "instruction": "Analyze and decompose this general_networking code from a production repository...",
+          "complexity": "medium",
+          "steps": 5,
+          "source": "github_repository"
+        },
+        {
+          "instruction": "Analyze and decompose this general_networking code from a production repository...",
+          "complexity": "medium",
+          "steps": 5,
+          "source": "github_repository"
+        },
+        {
+          "instruction": "Analyze and decompose this general_networking code from a production repository...",
+          "complexity": "medium",
+          "steps": 5,
+          "source": "github_repository"
+        }
+      ]
+    },
+    "async_networking": {
+      "count": 5,
+      "avg_steps": 6.0,
+      "avg_time_us": 273820.0,
+      "examples": [
+        {
+          "instruction": "Study and decompose this async_networking code from a production repository...",
+          "complexity": "high",
+          "steps": 6,
+          "source": "github_repository"
+        },
+        {
+          "instruction": "Analyze and break down this async_networking code from a production repository...",
+          "complexity": "high",
+          "steps": 6,
+          "source": "github_repository"
+        },
+        {
+          "instruction": "Analyze and break down this async_networking code from a production repository...",
+          "complexity": "high",
+          "steps": 6,
+          "source": "github_repository"
+        },
+        {
+          "instruction": "Decompose and explain this async_networking code from a production repository...",
+          "complexity": "high",
+          "steps": 6,
+          "source": "github_repository"
+        },
+        {
+          "instruction": "Analyze and decompose this async_networking code from a production repository...",
+          "complexity": "high",
+          "steps": 6,
+          "source": "github_repository"
+        }
+      ]
+    },
+    "network_security": {
+      "count": 41,
+      "avg_steps": 6.0,
+      "avg_time_us": 903082.9024390244,
+      "examples": [
+        {
+          "instruction": "Analyze and decompose this network_security code from a production repository...",
+          "complexity": "extreme",
+          "steps": 6,
+          "source": "github_repository"
+        },
+        {
+          "instruction": "Analyze and decompose this network_security code from a production repository...",
+          "complexity": "high",
+          "steps": 6,
+          "source": "github_repository"
+        },
+        {
+          "instruction": "Analyze and decompose this network_security code from a production repository...",
+          "complexity": "high",
+          "steps": 6,
+          "source": "github_repository"
+        },
+        {
+          "instruction": "Analyze and decompose this network_security code from a production repository...",
+          "complexity": "high",
+          "steps": 6,
+          "source": "github_repository"
+        },
+        {
+          "instruction": "Analyze and decompose this network_security code from a production repository...",
+          "complexity": "extreme",
+          "steps": 6,
+          "source": "github_repository"
+        }
+      ]
+    },
+    "api_clients": {
+      "count": 28,
+      "avg_steps": 5.0,
+      "avg_time_us": 89586.64285714286,
+      "examples": [
+        {
+          "instruction": "Analyze and decompose this api_clients code from a production repository...",
+          "complexity": "medium",
+          "steps": 5,
+          "source": "github_repository"
+        },
+        {
+          "instruction": "Analyze and decompose this api_clients code from a production repository...",
+          "complexity": "medium",
+          "steps": 5,
+          "source": "github_repository"
+        },
+        {
+          "instruction": "Analyze and decompose this api_clients code from a production repository...",
+          "complexity": "medium",
+          "steps": 5,
+          "source": "github_repository"
+        },
+        {
+          "instruction": "Analyze and decompose this api_clients code from a production repository...",
+          "complexity": "medium",
+          "steps": 5,
+          "source": "github_repository"
+        },
+        {
+          "instruction": "Analyze and decompose this api_clients code from a production repository...",
+          "complexity": "medium",
+          "steps": 5,
+          "source": "github_repository"
+        }
+      ]
+    },
+    "grpc": {
+      "count": 5,
+      "avg_steps": 5.2,
+      "avg_time_us": 433332.0,
+      "examples": [
+        {
+          "instruction": "Analyze and decompose this grpc code from a production repository...",
+          "complexity": "medium",
+          "steps": 5,
+          "source": "github_repository"
+        },
+        {
+          "instruction": "Analyze and decompose this grpc code from a production repository...",
+          "complexity": "medium",
+          "steps": 5,
+          "source": "github_repository"
+        },
+        {
+          "instruction": "Decompose the network operation: gRPC Service Call...",
+          "complexity": "medium",
+          "steps": 6,
+          "source": "synthetic_generation"
+        },
+        {
+          "instruction": "Analyze and decompose this grpc code from a production repository...",
+          "complexity": "medium",
+          "steps": 5,
+          "source": "github_repository"
+        },
+        {
+          "instruction": "Analyze and decompose this grpc code from a production repository...",
+          "complexity": "medium",
+          "steps": 5,
+          "source": "github_repository"
+        }
+      ]
+    },
+    "tcp_udp": {
+      "count": 7,
+      "avg_steps": 5.0,
+      "avg_time_us": 62226.142857142855,
+      "examples": [
+        {
+          "instruction": "Analyze and decompose this tcp_udp code from a production repository...",
+          "complexity": "medium",
+          "steps": 5,
+          "source": "github_repository"
+        },
+        {
+          "instruction": "Analyze and decompose this tcp_udp code from a production repository...",
+          "complexity": "medium",
+          "steps": 5,
+          "source": "github_repository"
+        },
+        {
+          "instruction": "Analyze and decompose this tcp_udp code from a production repository...",
+          "complexity": "medium",
+          "steps": 5,
+          "source": "github_repository"
+        },
+        {
+          "instruction": "Analyze and decompose this tcp_udp code from a production repository...",
+          "complexity": "medium",
+          "steps": 5,
+          "source": "github_repository"
+        },
+        {
+          "instruction": "Analyze and decompose this tcp_udp code from a production repository...",
+          "complexity": "medium",
+          "steps": 5,
+          "source": "github_repository"
+        }
+      ]
+    },
+    "proxy_tunneling": {
+      "count": 5,
+      "avg_steps": 5.0,
+      "avg_time_us": 190579.8,
+      "examples": [
+        {
+          "instruction": "Analyze and decompose this proxy_tunneling code from a production repository...",
+          "complexity": "medium",
+          "steps": 5,
+          "source": "github_repository"
+        },
+        {
+          "instruction": "Study and decompose this proxy_tunneling code from a production repository...",
+          "complexity": "medium",
+          "steps": 5,
+          "source": "github_repository"
+        },
+        {
+          "instruction": "Analyze and decompose this proxy_tunneling code from a production repository...",
+          "complexity": "medium",
+          "steps": 5,
+          "source": "github_repository"
+        },
+        {
+          "instruction": "Examine and structure this proxy_tunneling code from a production repository...",
+          "complexity": "medium",
+          "steps": 5,
+          "source": "github_repository"
+        },
+        {
+          "instruction": "Decompose and explain this proxy_tunneling code from a production repository...",
+          "complexity": "medium",
+          "steps": 5,
+          "source": "github_repository"
+        }
+      ]
+    },
+    "quic_http3": {
+      "count": 5,
+      "avg_steps": 5.0,
+      "avg_time_us": 1220993.0,
+      "examples": [
+        {
+          "instruction": "Decompose the network operation: QUIC Connection Establishment...",
+          "complexity": "high",
+          "steps": 5,
+          "source": "synthetic_generation"
+        },
+        {
+          "instruction": "Decompose the network operation: QUIC Connection Establishment...",
+          "complexity": "high",
+          "steps": 5,
+          "source": "synthetic_generation"
+        },
+        {
+          "instruction": "Decompose the network operation: QUIC Connection Establishment...",
+          "complexity": "high",
+          "steps": 5,
+          "source": "synthetic_generation"
+        },
+        {
+          "instruction": "Decompose the network operation: QUIC Connection Establishment...",
+          "complexity": "high",
+          "steps": 5,
+          "source": "synthetic_generation"
+        },
+        {
+          "instruction": "Decompose the network operation: QUIC Connection Establishment...",
+          "complexity": "high",
+          "steps": 5,
+          "source": "synthetic_generation"
+        }
+      ]
+    }
+  },
+  "complexity_by_category": {
+    "socket_programming": {
+      "high": 35
+    },
+    "tcp_connection_management": {
+      "medium": 5
+    },
+    "dns_resolution": {
+      "high": 26
+    },
+    "http_requests": {
+      "extreme": 18
+    },
+    "general_networking": {
+      "medium": 91,
+      "high": 7,
+      "extreme": 2
+    },
+    "async_networking": {
+      "high": 5
+    },
+    "network_security": {
+      "extreme": 2,
+      "high": 39
+    },
+    "api_clients": {
+      "medium": 27,
+      "high": 1
+    },
+    "grpc": {
+      "medium": 5
+    },
+    "tcp_udp": {
+      "medium": 7
+    },
+    "proxy_tunneling": {
+      "medium": 5
+    },
+    "quic_http3": {
+      "high": 5
+    }
+  },
+  "resource_usage_by_category": {
+    "socket_programming": {
+      "CPU": 105,
+      "I/O": 140
+    },
+    "tcp_connection_management": {
+      "I/O": 15,
+      "CPU": 10
+    },
+    "dns_resolution": {
+      "CPU": 52,
+      "MEMORY": 52,
+      "I/O": 52
+    },
+    "http_requests": {
+      "CPU": 54,
+      "I/O": 90
+    },
+    "general_networking": {
+      "CPU": 400,
+      "I/O": 100
+    },
+    "async_networking": {
+      "CPU": 25,
+      "I/O": 5
+    },
+    "network_security": {
+      "CPU": 164,
+      "I/O": 82
+    },
+    "api_clients": {
+      "CPU": 112,
+      "I/O": 28
+    },
+    "grpc": {
+      "CPU": 19,
+      "I/O": 7
+    },
+    "tcp_udp": {
+      "CPU": 28,
+      "I/O": 7
+    },
+    "proxy_tunneling": {
+      "CPU": 20,
+      "I/O": 5
+    },
+    "quic_http3": {
+      "CPU": 10,
+      "I/O": 15
+    }
+  },
+  "sources_by_category": {
+    "socket_programming": {
+      "github_repository": 35
+    },
+    "tcp_connection_management": {
+      "synthetic_generation": 5
+    },
+    "dns_resolution": {
+      "github_repository": 26
+    },
+    "http_requests": {
+      "github_repository": 18
+    },
+    "general_networking": {
+      "github_repository": 100
+    },
+    "async_networking": {
+      "github_repository": 5
+    },
+    "network_security": {
+      "github_repository": 41
+    },
+    "api_clients": {
+      "github_repository": 28
+    },
+    "grpc": {
+      "github_repository": 4,
+      "synthetic_generation": 1
+    },
+    "tcp_udp": {
+      "github_repository": 7
+    },
+    "proxy_tunneling": {
+      "github_repository": 5
+    },
+    "quic_http3": {
+      "synthetic_generation": 5
+    }
+  }
+}
